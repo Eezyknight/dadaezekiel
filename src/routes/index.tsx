@@ -344,9 +344,6 @@ function Index() {
             <a href="#services" className="transition-colors hover:text-foreground">
               Services
             </a>
-            <a href="#rates" className="transition-colors hover:text-foreground">
-              Rates
-            </a>
           </nav>
         </div>
       </footer>
