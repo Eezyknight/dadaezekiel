@@ -110,32 +110,6 @@ const testimonials = [
   },
 ];
 
-const rates = [
-  {
-    name: "The Piece",
-    price: "$2,400",
-    unit: "per essay",
-    items: ["Up to 3,000 words", "Research & interviews", "Two revision rounds", "3-week delivery"],
-  },
-  {
-    name: "The Voice",
-    price: "$6,800",
-    unit: "per project",
-    items: [
-      "Full site or brand copy",
-      "Tone-of-voice guide",
-      "Unlimited revisions in scope",
-      "6-week delivery",
-    ],
-    featured: true,
-  },
-  {
-    name: "The Retainer",
-    price: "$4,200",
-    unit: "per month",
-    items: ["Four pieces monthly", "Ghostwritten bylines", "Editorial calendar", "Priority access"],
-  },
-];
 
 function Index() {
   return (
@@ -338,53 +312,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Rates */}
-      <section id="rates" className="border-t border-border">
-        <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
-          <p className="eyebrow">Rates</p>
-          <h2 className="display-type mt-4 text-4xl leading-tight sm:text-5xl">
-            Simple, per-piece pricing.
-          </h2>
-
-          <div className="mt-14 grid gap-5 md:grid-cols-3">
-            {rates.map((r) => (
-              <article
-                key={r.name}
-                className={
-                  r.featured
-                    ? "rounded-2xl border border-accent/60 bg-card p-8 shadow-lift"
-                    : "rounded-2xl border border-border bg-card p-8"
-                }
-              >
-                <p className="eyebrow">{r.name}</p>
-                <p className="display-type mt-5 text-4xl">{r.price}</p>
-                <p className="mt-1 text-sm text-muted-foreground">{r.unit}</p>
-                <ul className="mt-7 space-y-3 text-sm text-muted-foreground">
-                  {r.items.map((i) => (
-                    <li key={i} className="flex gap-3">
-                      <span className="text-accent" aria-hidden>
-                        —
-                      </span>
-                      {i}
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href="#contact"
-                  className={
-                    r.featured
-                      ? "mt-8 block rounded-full bg-accent px-5 py-3 text-center text-sm font-medium text-accent-foreground transition-transform hover:scale-[1.03]"
-                      : "mt-8 block rounded-full border border-border px-5 py-3 text-center text-sm font-medium transition-colors hover:bg-secondary"
-                  }
-                >
-                  Enquire
-                </a>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Contact */}
       <section id="contact" className="border-t border-border bg-spot">
         <div className="mx-auto max-w-3xl px-5 py-28 text-center sm:px-8">
@@ -416,9 +343,6 @@ function Index() {
             </a>
             <a href="#services" className="transition-colors hover:text-foreground">
               Services
-            </a>
-            <a href="#rates" className="transition-colors hover:text-foreground">
-              Rates
             </a>
           </nav>
         </div>
