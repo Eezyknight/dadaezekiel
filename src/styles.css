@@ -123,8 +123,8 @@
 }
 
 @utility mask-fade-bottom {
-  -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+  -webkit-mask-image: radial-gradient(85% 78% at 62% 42%, black 55%, transparent 100%);
+  mask-image: radial-gradient(85% 78% at 62% 42%, black 55%, transparent 100%);
 }
 
 @utility shadow-lift {
