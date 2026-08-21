@@ -178,7 +178,13 @@ function Index() {
               alt="Portrait of writer Mara Ellison holding a notebook"
               width={1200}
               height={1504}
-              className="mask-fade-bottom h-[52svh] w-auto object-contain mix-blend-screen lg:h-[76svh]"
+              className="h-[52svh] w-auto object-contain mix-blend-screen lg:h-[76svh]"
+              style={{
+                maskImage:
+                  "radial-gradient(78% 72% at 60% 40%, black 45%, transparent 100%)",
+                WebkitMaskImage:
+                  "radial-gradient(78% 72% at 60% 40%, black 45%, transparent 100%)",
+              }}
             />
           </div>
         </div>
