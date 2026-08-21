@@ -13,7 +13,7 @@ export function Nav() {
           className="display-type flex size-10 items-center justify-center rounded-xl bg-secondary/80 text-lg backdrop-blur"
           aria-label="Home"
         >
-          M
+          {"\n"}
         </a>
 
         <div className="flex items-center gap-1.5">
