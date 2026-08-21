@@ -8,13 +8,8 @@ export function Nav() {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
-        <a
-          href="#top"
-          className="display-type flex size-10 items-center justify-center rounded-xl bg-secondary/80 text-lg backdrop-blur"
-          aria-label="Home"
-        >
-          {"\n"}
-        </a>
+        <div aria-hidden="true" />
+
 
         <div className="flex items-center gap-1.5">
           <div className="hidden items-center gap-1 rounded-full bg-secondary/60 p-1 backdrop-blur sm:flex">
