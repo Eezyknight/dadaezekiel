@@ -217,8 +217,8 @@ function Index() {
           </div>
           <figure className="overflow-hidden rounded-2xl border border-border shadow-lift">
             <img
-              src={deskImage}
-              alt="An open book and fountain pen lit by a single beam of light"
+              src={ezekielPortrait.url}
+              alt="Portrait of Ezekiel Dada, SaaS and Tech writer"
               width={1200}
               height={900}
               loading="lazy"
