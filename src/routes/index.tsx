@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
 import heroPortrait from "@/assets/writer-hero.jpg";
-import deskImage from "@/assets/desk.jpg";
+import ezekielPortrait from "@/assets/ezekiel-portrait.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -217,8 +217,8 @@ function Index() {
           </div>
           <figure className="overflow-hidden rounded-2xl border border-border shadow-lift">
             <img
-              src={deskImage}
-              alt="An open book and fountain pen lit by a single beam of light"
+              src={ezekielPortrait.url}
+              alt="Portrait of Ezekiel Dada, SaaS and Tech writer"
               width={1200}
               height={900}
               loading="lazy"
