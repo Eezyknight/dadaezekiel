@@ -190,22 +190,28 @@ function Index() {
       </section>
 
       {/* Featured / the writer's cut */}
-      <section className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
+      <section id="about" className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center">
           <div>
-            <p className="eyebrow">Collected Works 2026</p>
+            <p className="eyebrow">About Me</p>
             <h2 className="display-type mt-4 text-4xl leading-tight sm:text-5xl">
-              The writer's cut.
+              SaaS & Tech Writer.
             </h2>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
-              A short reader of the pieces I'd hand someone first — three essays, one brand
-              manifesto, and the letter that started the newsletter.
+              I'm a SaaS and Tech writer who turns complex ideas into clear, useful content that
+              helps businesses get found, build trust, and convert readers into customers.
+            </p>
+            <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
+              I started writing professionally over five years ago, working across several
+              industries and learning what makes content more than just words on a page. Today, I
+              focus exclusively on SaaS and technology companies, creating blog content and website
+              copy built around a clear understanding of the audience.
             </p>
             <a
-              href="#work"
+              href="#contact"
               className="mt-8 inline-flex items-center gap-2 rounded-full border border-accent px-6 py-3 text-sm font-medium text-accent transition-colors hover:bg-accent hover:text-accent-foreground"
             >
-              Open the reader
+              Start a project
               <span aria-hidden>→</span>
             </a>
           </div>
