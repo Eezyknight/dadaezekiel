@@ -144,8 +144,8 @@ function Index() {
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-spot">
-        <div className="relative mx-auto grid min-h-[100svh] max-w-7xl grid-cols-1 items-end px-5 pt-28 sm:px-8 lg:grid-cols-2">
-          <div className="rise pb-16 lg:pb-28">
+        <div className="relative mx-auto grid min-h-[92svh] max-w-7xl grid-cols-1 items-center px-5 pt-28 sm:px-8 lg:grid-cols-2">
+          <div className="rise pb-10 lg:pb-16">
             <p className="eyebrow">Writer · Essayist · Ghostwriter</p>
             <h1 className="display-type mt-5 text-5xl leading-[0.95] sm:text-6xl lg:text-7xl">
               Words that keep
@@ -178,7 +178,7 @@ function Index() {
               alt="Portrait of writer Mara Ellison holding a notebook"
               width={1200}
               height={1504}
-              className="mask-fade-bottom h-[62svh] w-auto object-contain lg:h-[86svh]"
+              className="mask-fade-bottom h-[52svh] w-auto object-contain mix-blend-screen lg:h-[76svh]"
             />
           </div>
         </div>
