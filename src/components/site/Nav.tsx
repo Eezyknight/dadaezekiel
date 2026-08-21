@@ -10,7 +10,7 @@ export function Nav() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
         <a
           href="#top"
-          className="font-display flex size-10 items-center justify-center rounded-xl bg-secondary/80 text-lg backdrop-blur"
+          className="display-type flex size-10 items-center justify-center rounded-xl bg-secondary/80 text-lg backdrop-blur"
           aria-label="Home"
         >
           M
