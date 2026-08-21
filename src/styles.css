@@ -122,6 +122,11 @@
   background-image: var(--gradient-spot);
 }
 
+@utility hero-portrait {
+  -webkit-mask-image: radial-gradient(58% 72% at 50% 45%, black 42%, transparent 100%);
+  mask-image: radial-gradient(58% 72% at 50% 45%, black 42%, transparent 100%);
+}
+
 @utility name-fade {
   background-image: linear-gradient(
     to bottom,

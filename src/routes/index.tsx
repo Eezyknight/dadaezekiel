@@ -151,7 +151,7 @@ function Index() {
             alt="Portrait of writer Mara Ellison holding a notebook"
             width={1200}
             height={1504}
-            className="pointer-events-none absolute bottom-0 left-1/2 h-[78svh] w-auto max-w-none -translate-x-1/2 object-cover object-top sm:h-[88svh]"
+            className="hero-portrait pointer-events-none absolute bottom-0 left-1/2 h-[78svh] w-auto max-w-none -translate-x-1/2 object-cover object-top sm:h-[88svh]"
           />
           <div
             className="pointer-events-none absolute inset-0"
