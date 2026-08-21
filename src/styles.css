@@ -167,9 +167,9 @@
 @utility name-fade {
   background-image: linear-gradient(
     to bottom,
-    oklch(0.99 0.005 90) 30%,
-    oklch(0.99 0.005 90 / 0.35) 82%,
-    oklch(0.99 0.005 90 / 0.05) 100%
+    var(--name-top) 30%,
+    color-mix(in oklab, var(--name-top) 35%, transparent) 82%,
+    var(--name-bottom) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
