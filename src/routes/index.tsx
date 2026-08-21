@@ -172,20 +172,23 @@ function Index() {
             </div>
           </div>
 
-          <div className="relative flex justify-center self-end lg:justify-end">
-            <img
-              src={heroPortrait}
-              alt="Portrait of writer Mara Ellison holding a notebook"
-              width={1200}
-              height={1504}
-              className="h-[52svh] w-auto object-contain mix-blend-screen lg:h-[76svh]"
-              style={{
-                maskImage:
-                  "radial-gradient(78% 72% at 60% 40%, black 45%, transparent 100%)",
-                WebkitMaskImage:
-                  "radial-gradient(78% 72% at 60% 40%, black 45%, transparent 100%)",
-              }}
-            />
+          <div className="relative flex justify-center lg:justify-end">
+            <figure className="relative w-full max-w-md overflow-hidden rounded-3xl border border-border shadow-lift">
+              <img
+                src={heroPortrait}
+                alt="Portrait of writer Mara Ellison holding a notebook"
+                width={1200}
+                height={1504}
+                className="h-[46svh] w-full object-cover object-top lg:h-[70svh]"
+              />
+              <div
+                className="pointer-events-none absolute inset-0"
+                style={{ backgroundImage: "var(--gradient-fade)" }}
+              />
+              <figcaption className="absolute bottom-5 left-6 text-sm text-muted-foreground">
+                Mara Ellison, studio, 2026
+              </figcaption>
+            </figure>
           </div>
         </div>
 
