@@ -144,19 +144,36 @@ function Index() {
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-spot">
-        <div className="relative mx-auto grid min-h-[92svh] max-w-7xl grid-cols-1 items-center px-5 pt-28 sm:px-8 lg:grid-cols-2">
-          <div className="rise pb-10 lg:pb-16">
-            <p className="eyebrow">Writer · Essayist · Ghostwriter</p>
-            <h1 className="display-type mt-5 text-5xl leading-[0.95] sm:text-6xl lg:text-7xl">
-              Words that keep
+        <div className="relative flex min-h-[96svh] flex-col justify-end overflow-hidden">
+          {/* Portrait */}
+          <img
+            src={heroPortrait}
+            alt="Portrait of writer Mara Ellison holding a notebook"
+            width={1200}
+            height={1504}
+            className="hero-portrait pointer-events-none absolute bottom-0 left-1/2 h-[78svh] w-auto max-w-none -translate-x-1/2 object-cover object-top sm:h-[88svh]"
+          />
+          <div
+            className="pointer-events-none absolute inset-0"
+            style={{ backgroundImage: "var(--gradient-fade)" }}
+          />
+
+          {/* Eyebrow */}
+          <div className="relative mx-auto w-full max-w-7xl px-5 sm:px-8">
+            <p className="rise display-type absolute bottom-[42svh] left-5 max-w-[8em] text-2xl leading-tight text-foreground/90 sm:left-8 sm:text-3xl">
+              Essayist &amp;
               <br />
-              <span className="text-accent italic">people reading.</span>
-            </h1>
-            <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground">
-              I'm Mara Ellison — I write essays, editorial features and brand narrative for people
-              who would rather be understood than be loud.
+              Brand Storyteller
             </p>
-            <div className="mt-9 flex flex-wrap items-center gap-3">
+          </div>
+
+          {/* Name */}
+          <div className="relative mx-auto w-full max-w-7xl px-5 pb-10 sm:px-8 sm:pb-14">
+            <h1 className="rise name-fade text-center text-[17vw] leading-[0.8] tracking-tight sm:text-[15vw]">
+              <span className="display-type italic">Mara</span>{" "}
+              <span className="font-semibold tracking-[-0.03em]">Ellison</span>
+            </h1>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <a
                 href="#work"
                 className="rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
@@ -165,30 +182,11 @@ function Index() {
               </a>
               <a
                 href="#contact"
-                className="rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
+                className="rounded-full border border-border bg-secondary/40 px-6 py-3 text-sm font-medium text-foreground backdrop-blur transition-colors hover:bg-secondary"
               >
                 Start a project
               </a>
             </div>
-          </div>
-
-          <div className="relative flex justify-center lg:justify-end">
-            <figure className="relative w-full max-w-md overflow-hidden rounded-3xl border border-border shadow-lift">
-              <img
-                src={heroPortrait}
-                alt="Portrait of writer Mara Ellison holding a notebook"
-                width={1200}
-                height={1504}
-                className="h-[46svh] w-full object-cover object-top lg:h-[70svh]"
-              />
-              <div
-                className="pointer-events-none absolute inset-0"
-                style={{ backgroundImage: "var(--gradient-fade)" }}
-              />
-              <figcaption className="absolute bottom-5 left-6 text-sm text-muted-foreground">
-                Mara Ellison, studio, 2026
-              </figcaption>
-            </figure>
           </div>
         </div>
 
@@ -204,6 +202,7 @@ function Index() {
           </div>
         </div>
       </section>
+
 
       {/* Marquee of bylines */}
       <section aria-label="Published in" className="overflow-hidden border-y border-border py-6">
