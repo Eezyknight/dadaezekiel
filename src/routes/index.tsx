@@ -110,32 +110,6 @@ const testimonials = [
   },
 ];
 
-const rates = [
-  {
-    name: "The Piece",
-    price: "$2,400",
-    unit: "per essay",
-    items: ["Up to 3,000 words", "Research & interviews", "Two revision rounds", "3-week delivery"],
-  },
-  {
-    name: "The Voice",
-    price: "$6,800",
-    unit: "per project",
-    items: [
-      "Full site or brand copy",
-      "Tone-of-voice guide",
-      "Unlimited revisions in scope",
-      "6-week delivery",
-    ],
-    featured: true,
-  },
-  {
-    name: "The Retainer",
-    price: "$4,200",
-    unit: "per month",
-    items: ["Four pieces monthly", "Ghostwritten bylines", "Editorial calendar", "Priority access"],
-  },
-];
 
 function Index() {
   return (
