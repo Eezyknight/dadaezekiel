@@ -47,6 +47,51 @@
 
 :root {
   --radius: 0.75rem;
+  color-scheme: light;
+
+  /* Light — warm paper editorial */
+  --background: oklch(0.975 0.006 90);
+  --foreground: oklch(0.17 0.005 90);
+  --card: oklch(0.995 0.004 90);
+  --card-foreground: oklch(0.17 0.005 90);
+  --popover: oklch(0.995 0.004 90);
+  --popover-foreground: oklch(0.17 0.005 90);
+  --primary: oklch(0.19 0.005 90);
+  --primary-foreground: oklch(0.98 0.005 90);
+  --secondary: oklch(0.93 0.008 90);
+  --secondary-foreground: oklch(0.2 0.005 90);
+  --muted: oklch(0.93 0.008 90);
+  --muted-foreground: oklch(0.48 0.01 90);
+  --accent: oklch(0.66 0.12 65);
+  --accent-foreground: oklch(0.98 0.005 90);
+  --destructive: oklch(0.58 0.2 25);
+  --destructive-foreground: oklch(0.98 0.005 90);
+  --border: oklch(0.17 0.005 90 / 12%);
+  --input: oklch(0.17 0.005 90 / 16%);
+  --ring: oklch(0.66 0.12 65);
+
+  --ink: oklch(0.11 0 0);
+  --paper: oklch(0.97 0.005 90);
+  --gold: oklch(0.66 0.12 65);
+
+  --font-display: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-sans: "Geist", "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, monospace;
+
+  --gradient-spot: radial-gradient(
+    120% 90% at 50% 0%,
+    oklch(0.91 0.012 85) 0%,
+    oklch(0.975 0.006 90) 62%
+  );
+  --gradient-fade: linear-gradient(to bottom, transparent 45%, oklch(0.975 0.006 90) 96%);
+  --shadow-lift: 0 24px 60px -28px oklch(0.2 0.02 80 / 0.28);
+  --glow-gold: 0 0 40px -8px color-mix(in oklab, var(--gold) 35%, transparent);
+  --name-top: oklch(0.16 0.005 90);
+  --name-bottom: oklch(0.16 0.005 90 / 0.06);
+}
+
+.dark {
+  color-scheme: dark;
 
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.97 0.005 90);
@@ -68,13 +113,7 @@
   --input: oklch(1 0 0 / 14%);
   --ring: oklch(0.78 0.11 78);
 
-  --ink: oklch(0.11 0 0);
-  --paper: oklch(0.97 0.005 90);
   --gold: oklch(0.78 0.11 78);
-
-  --font-display: "Instrument Serif", ui-serif, Georgia, serif;
-  --font-sans: "Geist", "DM Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, monospace;
 
   --gradient-spot: radial-gradient(
     120% 90% at 50% 0%,
@@ -83,12 +122,10 @@
   );
   --gradient-fade: linear-gradient(to bottom, transparent 45%, oklch(0.145 0 0) 96%);
   --shadow-lift: 0 24px 60px -24px oklch(0 0 0 / 0.85);
-  --glow-gold: 0 0 40px -8px color-mix(in oklab, var(--gold) 45%, transparent);
+  --name-top: oklch(0.99 0.005 90);
+  --name-bottom: oklch(0.99 0.005 90 / 0.05);
 }
 
-.dark {
-  color-scheme: dark;
-}
 
 @layer base {
   * {
