@@ -144,8 +144,8 @@ function Index() {
           {/* Name */}
           <div className="relative mx-auto w-full max-w-7xl px-5 pb-10 sm:px-8 sm:pb-14">
             <h1 className="rise name-fade text-center text-[17vw] leading-[0.8] tracking-tight sm:text-[15vw]">
-              <span className="display-type italic">Mara</span>{" "}
-              <span className="font-semibold tracking-[-0.03em]">Ellison</span>
+              <span className="display-type italic">Ezekiel</span>{" "}
+              <span className="font-semibold tracking-[-0.03em]">Dada</span>
             </h1>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <a
