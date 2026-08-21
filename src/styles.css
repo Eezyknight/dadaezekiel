@@ -122,6 +122,19 @@
   background-image: var(--gradient-spot);
 }
 
+@utility name-fade {
+  background-image: linear-gradient(
+    to bottom,
+    oklch(0.99 0.005 90) 30%,
+    oklch(0.99 0.005 90 / 0.35) 82%,
+    oklch(0.99 0.005 90 / 0.05) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
 @utility mask-fade-bottom {
   -webkit-mask-image: radial-gradient(85% 78% at 62% 42%, black 55%, transparent 100%);
   mask-image: radial-gradient(85% 78% at 62% 42%, black 55%, transparent 100%);
