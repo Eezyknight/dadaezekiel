@@ -267,7 +267,9 @@ function Index() {
             {work.map((w) => (
               <li key={w.title}>
                 <a
-                  href="#contact"
+                  href={w.link || "#contact"}
+                  target={w.link ? "_blank" : undefined}
+                  rel={w.link ? "noopener noreferrer" : undefined}
                   className="group grid gap-4 py-8 transition-colors hover:bg-secondary/40 sm:grid-cols-[auto_1fr] sm:gap-10 sm:px-2"
                 >
                   <div className="sm:w-52">
