@@ -26,9 +26,7 @@ export const Route = createFileRoute("/")({
 });
 
 const stats = [
-  { value: "120+", label: "Published Pieces" },
   { value: "5+", label: "Years Writing" },
-  { value: "4.1M", label: "Words Read" },
   { value: "98%", label: "Client Retention" },
 ];
 
@@ -86,13 +84,16 @@ const work = [
 ];
 
 const marquee = [
-  "The Atlantic",
-  "Aeon",
-  "Fathom Studio",
-  "Longreads",
-  "The Paris Review Daily",
-  "Monocle",
-  "Stripe Press",
+  "ClarityVerify",
+  "Anonsms",
+  "NotifyPartners",
+  "AiPPT",
+  "Gleepackaging",
+  "Clingold",
+  "Kesheen",
+  "Nendine",
+  "Tulipiece",
+  "Zearrow",
 ];
 
 const testimonials = [
