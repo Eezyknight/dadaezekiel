@@ -103,8 +103,14 @@ const testimonials = [
   {
     quote:
       "Ezekiel hit the pinnacle with the set of copies he wrote for our website. He’s the best of the best.",
-    name: " Anonsms",
+    name: "Anonsms",
     role: "",
+  },
+  {
+    quote:
+      "He could relay our SaaS product with any topic and make us stand out. I didn’t have to go back-and-forth with him.",
+    name: "",
+    role: "Lead Editor: AiPPT",
   },
 ];
 
@@ -296,11 +302,17 @@ function Index() {
         <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
           <p className="eyebrow">Kind Words</p>
           <div className="mt-12 grid gap-5 md:grid-cols-2">
-            {testimonials.map((t) => (
-              <blockquote key={t.name} className="rounded-2xl border border-border bg-card p-8">
+            {testimonials.map((t, i) => (
+              <blockquote key={i} className="rounded-2xl border border-border bg-card p-8">
                 <p className="display-type text-2xl leading-snug">“{t.quote}”</p>
                 <footer className="mt-6 text-sm text-muted-foreground">
-                  &nbsp;—&nbsp;<span className="text-foreground">{t.name}</span>{t.role && ` — ${t.role}`}
+                  {t.name ? (
+                    <>
+                      &nbsp;—&nbsp;<span className="text-foreground">{t.name}</span>{t.role && ` — ${t.role}`}
+                    </>
+                  ) : (
+                    <>&nbsp;—&nbsp;{t.role}</>
+                  )}
                 </footer>
               </blockquote>
             ))}
