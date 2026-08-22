@@ -47,36 +47,30 @@ const services = [
 
 const work = [
   {
-    title: "The Quiet Hours",
-    outlet: "The Atlantic Ideas",
-    kind: "Essay",
+    title: "Best OnlyFans Search Engines in 2026",
+    outlet: "Self-Published",
+    kind: "Blog",
     year: "2026",
     excerpt:
-      "A 6,000-word essay on the vanishing habit of unproductive attention — and what it costs a culture that stopped being bored.",
+      "A compared list of the top OnlyFans search engines for finding specific creators — with natural promotion of my client’s brand as the best option.",
   },
   {
-    title: "Everything We Built Twice",
-    outlet: "Fathom Studio",
-    kind: "Brand Narrative",
-    year: "2025",
+    title: "Anonsms: How to Send Anonymous SMS Online",
+    outlet: "Company",
+    kind: "Web Copy",
+    year: "2026",
     excerpt:
-      "Rewrote the voice of a design studio from the manifesto down, cutting the site copy by half and doubling inbound.",
+      "Wrote a step-by-step guide on sending anonymous SMS through Anonsms, highlighting its speed, safety, privacy, and delivery success rate.",
+    link: "https://www.anonsms.com/how-to-send-anonymous-sms",
   },
   {
-    title: "Letters From the Interior",
-    outlet: "Self-published",
-    kind: "Newsletter",
-    year: "2024—",
-    excerpt:
-      "A twice-monthly letter on craft and attention, read by 24,000 writers, editors and stubborn people.",
-  },
-  {
-    title: "The Founder Who Wouldn't Speak",
+    title: "How to Block Your Number: 5 Easy Ways",
     outlet: "Confidential",
     kind: "Ghostwriting",
-    year: "2025",
+    year: "2026",
     excerpt:
-      "Eighteen months of op-eds and keynotes for a founder who hates writing — and now gets quoted for it.",
+      "Detailed 1-1 meeting, research, and writing for a founder who’s very busy — but now gets quoted for it.",
+    link: "https://www.anonsms.com/blog/how-to-block-your-number/",
   },
 ];
 
@@ -273,7 +267,9 @@ function Index() {
             {work.map((w) => (
               <li key={w.title}>
                 <a
-                  href="#contact"
+                  href={w.link || "#contact"}
+                  target={w.link ? "_blank" : undefined}
+                  rel={w.link ? "noopener noreferrer" : undefined}
                   className="group grid gap-4 py-8 transition-colors hover:bg-secondary/40 sm:grid-cols-[auto_1fr] sm:gap-10 sm:px-2"
                 >
                   <div className="sm:w-52">
