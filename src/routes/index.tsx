@@ -106,6 +106,12 @@ const testimonials = [
     name: " Anonsms",
     role: "",
   },
+  {
+    quote:
+      "He could relay our SaaS product with any topic and make us stand out. I didn’t have to go back-and-forth with him.",
+    name: "AiPPT",
+    role: "Lead Editor",
+  },
 ];
 
 
