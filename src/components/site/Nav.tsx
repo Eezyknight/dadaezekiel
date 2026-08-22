@@ -3,7 +3,7 @@ import { ThemeToggle } from "./ThemeToggle";
 const links = [
   { label: "Work", href: "#work" },
   { label: "Services", href: "#services" },
-  { label: "Rates", href: "#rates" },
+  { label: "About", href: "#about" },
 ];
 
 export function Nav() {
