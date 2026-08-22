@@ -27,25 +27,25 @@ export const Route = createFileRoute("/")({
 
 const stats = [
   { value: "120+", label: "Published Pieces" },
-  { value: "9", label: "Years Writing" },
+  { value: "5+", label: "Years Writing" },
   { value: "4.1M", label: "Words Read" },
-  { value: "96%", label: "Client Retention" },
+  { value: "98%", label: "Client Retention" },
 ];
 
 const services = [
   {
-    title: "Long-Form Essays",
-    copy: "Reported, structured essays that hold a reader from the first line to the last paragraph.",
+    title: "Blogs & Long-Form Articles",
+    copy: "Research-driven SaaS and Tech content that informs, ranks, and builds authority.",
     tags: ["Research", "Structure", "Interviews", "Line editing"],
   },
   {
-    title: "Brand & Editorial Copy",
-    copy: "Voice work for founders and studios — landing pages, manifestos, launch narratives.",
+    title: "Website & Brand Copy",
+    copy: "Clear, persuasive copy that communicates your product, value, and positioning.",
     tags: ["Tone of voice", "Web copy", "Launch narrative", "Naming"],
   },
   {
     title: "Ghostwriting",
-    copy: "Bylines, newsletters and op-eds written in your voice, on your schedule, invisibly.",
+    copy: "Thoughtful content written in your voice, without taking the spotlight.",
     tags: ["Op-eds", "Newsletters", "Keynotes", "Books"],
   },
 ];
@@ -98,15 +98,15 @@ const marquee = [
 const testimonials = [
   {
     quote:
-      "Mara turned nine months of half-formed thinking into an essay that our board now hands out to new hires.",
-    name: "Iris Kwon",
-    role: "Founder, Fathom Studio",
+      "Exceptional writer who understands complex topics and turns them into clear, engaging, and search-focused content.",
+    name: "ClarityVerify",
+    role: "",
   },
   {
     quote:
-      "She edits like a surgeon and drafts like a novelist. I have never sent back a piece of hers with notes.",
-    name: "Daniel Reyes",
-    role: "Features Editor, Longreads",
+      "Ezekiel hit the pinnacle with the set of copies he wrote for our website. He’s the best of the best.",
+    name: "Anonsms",
+    role: "",
   },
 ];
 
@@ -135,9 +135,9 @@ function Index() {
           {/* Eyebrow */}
           <div className="relative mx-auto w-full max-w-7xl px-5 sm:px-8">
             <p className="rise display-type absolute bottom-[42svh] left-5 max-w-[8em] text-2xl leading-tight text-foreground/90 sm:left-8 sm:text-3xl">
-              Essayist &amp;
+              SaaS & Tech
               <br />
-              Brand Storyteller
+              Content Writer
             </p>
           </div>
 
@@ -152,7 +152,7 @@ function Index() {
                 href="#work"
                 className="rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
               >
-                Read selected work
+                Portfolio
               </a>
               <a
                 href="#contact"
@@ -270,7 +270,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
           <p className="eyebrow">Selected Work</p>
           <h2 className="display-type mt-4 text-4xl leading-tight sm:text-5xl">
-            Pieces worth your evening.
+            Pieces worth your time.
           </h2>
 
           <ul className="mt-14 divide-y divide-border border-y border-border">
@@ -310,7 +310,7 @@ function Index() {
               <blockquote key={t.name} className="rounded-2xl border border-border bg-card p-8">
                 <p className="display-type text-2xl leading-snug">“{t.quote}”</p>
                 <footer className="mt-6 text-sm text-muted-foreground">
-                  <span className="text-foreground">{t.name}</span> — {t.role}
+                  <span className="text-foreground">{t.name}</span>{t.role && ` — ${t.role}`}
                 </footer>
               </blockquote>
             ))}
