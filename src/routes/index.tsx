@@ -105,7 +105,7 @@ const testimonials = [
   {
     quote:
       "Ezekiel hit the pinnacle with the set of copies he wrote for our website. He’s the best of the best.",
-    name: "Anonsms",
+    name: " Anonsms",
     role: "",
   },
 ];
