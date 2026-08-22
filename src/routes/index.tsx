@@ -301,7 +301,7 @@ function Index() {
       <section className="border-t border-border">
         <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
           <p className="eyebrow">Kind Words</p>
-          <div className="mt-12 grid gap-5 md:grid-cols-2">
+          <div className="mt-12 grid gap-5 md:grid-cols-3">
             {testimonials.map((t, i) => (
               <blockquote key={i} className="rounded-2xl border border-border bg-card p-8">
                 <p className="display-type text-2xl leading-snug">“{t.quote}”</p>
