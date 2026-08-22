@@ -330,17 +330,17 @@ function Index() {
             within two working days.
           </p>
           <a
-            href="mailto:hello@maraellison.com"
+            href="mailto:dadaezekiel12@gmail.com"
             className="mt-10 inline-block rounded-full bg-primary px-8 py-4 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
           >
-            hello@maraellison.com
+            dadaezekiel12@gmail.com
           </a>
         </div>
       </section>
 
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-10 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-8">
-          <p>© {new Date().getFullYear()} Mara Ellison. All words her own.</p>
+          <p>© {new Date().getFullYear()} Ezekiel Dada. All words his own.</p>
           <nav className="flex gap-6">
             <a href="#work" className="transition-colors hover:text-foreground">
               Work
