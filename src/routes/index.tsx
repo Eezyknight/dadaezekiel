@@ -310,7 +310,7 @@ function Index() {
               <blockquote key={t.name} className="rounded-2xl border border-border bg-card p-8">
                 <p className="display-type text-2xl leading-snug">“{t.quote}”</p>
                 <footer className="mt-6 text-sm text-muted-foreground">
-                  <span className="text-foreground">{t.name}</span>{t.role && ` — ${t.role}`}
+                  &nbsp;—&nbsp;<span className="text-foreground">{t.name}</span>{t.role && ` — ${t.role}`}
                 </footer>
               </blockquote>
             ))}
