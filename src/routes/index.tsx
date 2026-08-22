@@ -34,17 +34,14 @@ const services = [
   {
     title: "Blogs & Long-Form Articles",
     copy: "Research-driven SaaS and Tech content that informs, ranks, and builds authority.",
-    tags: ["Research", "Structure", "Interviews", "Line editing"],
   },
   {
     title: "Website & Brand Copy",
     copy: "Clear, persuasive copy that communicates your product, value, and positioning.",
-    tags: ["Tone of voice", "Web copy", "Launch narrative", "Naming"],
   },
   {
     title: "Ghostwriting",
     copy: "Thoughtful content written in your voice, without taking the spotlight.",
-    tags: ["Op-eds", "Newsletters", "Keynotes", "Books"],
   },
 ];
 
@@ -167,9 +164,9 @@ function Index() {
 
         {/* Stats bar */}
         <div className="relative border-t border-border">
-          <div className="mx-auto grid max-w-7xl grid-cols-2 divide-border sm:grid-cols-4 sm:divide-x">
+          <div className="mx-auto grid max-w-2xl grid-cols-2 gap-8 px-5 py-10 text-center sm:px-8">
             {stats.map((s) => (
-              <div key={s.label} className="px-5 py-8 sm:px-8">
+              <div key={s.label} className="px-4">
                 <p className="display-type text-3xl sm:text-4xl">{s.value}</p>
                 <p className="eyebrow mt-2">{s.label}</p>
               </div>
@@ -245,21 +242,13 @@ function Index() {
             {services.map((s, i) => (
               <article
                 key={s.title}
-                className="group rounded-2xl border border-border bg-card p-7 transition-colors hover:border-accent/50"
+                className="group flex flex-col justify-between rounded-2xl border border-border bg-card p-7 transition-colors hover:border-accent/50"
               >
-                <p className="eyebrow">0{i + 1}</p>
-                <h3 className="display-type mt-6 text-2xl">{s.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.copy}</p>
-                <ul className="mt-6 flex flex-wrap gap-2">
-                  {s.tags.map((t) => (
-                    <li
-                      key={t}
-                      className="rounded-full bg-secondary px-3 py-1 text-xs text-muted-foreground"
-                    >
-                      {t}
-                    </li>
-                  ))}
-                </ul>
+                <div>
+                  <p className="eyebrow">0{i + 1}</p>
+                  <h3 className="display-type mt-6 text-2xl">{s.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.copy}</p>
+                </div>
               </article>
             ))}
           </div>
