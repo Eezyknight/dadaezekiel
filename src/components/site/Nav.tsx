@@ -1,7 +1,9 @@
+import { ThemeToggle } from "./ThemeToggle";
+
 const links = [
   { label: "Work", href: "#work" },
   { label: "Services", href: "#services" },
-  { label: "Rates", href: "#rates" },
+  { label: "About", href: "#about" },
 ];
 
 export function Nav() {
@@ -23,6 +25,7 @@ export function Nav() {
               </a>
             ))}
           </div>
+          <ThemeToggle />
           <a
             href="#contact"
             className="rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
