@@ -340,7 +340,7 @@ function Index() {
 
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-10 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-8">
-          <p>© {new Date().getFullYear()} Mara Ellison. All words her own.</p>
+          <p>© {new Date().getFullYear()} Ezekiel Dada. All words his own.</p>
           <nav className="flex gap-6">
             <a href="#work" className="transition-colors hover:text-foreground">
               Work
