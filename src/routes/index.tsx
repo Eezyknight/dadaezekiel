@@ -303,7 +303,7 @@ function Index() {
           <p className="eyebrow">Kind Words</p>
           <div className="mt-12 grid gap-5 md:grid-cols-2">
             {testimonials.map((t, i) => (
-              <blockquote key={t.name} className="rounded-2xl border border-border bg-card p-8">
+              <blockquote key={i} className="rounded-2xl border border-border bg-card p-8">
                 <p className="display-type text-2xl leading-snug">“{t.quote}”</p>
                 <footer className="mt-6 text-sm text-muted-foreground">
                   {t.name ? (
