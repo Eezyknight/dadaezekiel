@@ -330,10 +330,10 @@ function Index() {
             within two working days.
           </p>
           <a
-            href="mailto:hello@maraellison.com"
+            href="mailto:dadaezekiel12@gmail.com"
             className="mt-10 inline-block rounded-full bg-primary px-8 py-4 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
           >
-            hello@maraellison.com
+            dadaezekiel12@gmail.com
           </a>
         </div>
       </section>
