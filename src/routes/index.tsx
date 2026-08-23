@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
-import heroPortrait from "@/assets/writer-hero.jpg";
+import heroPortraitAsset from "@/assets/ezekiel-hero.jpg.asset.json";
 import ezekielPortrait from "@/assets/ezekiel-portrait.png.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -119,11 +119,11 @@ function Index() {
         <div className="relative flex min-h-[96svh] flex-col justify-end overflow-hidden">
           {/* Portrait */}
           <img
-            src={heroPortrait}
-            alt="Portrait of writer Mara Ellison holding a notebook"
-            width={1200}
-            height={1504}
-            className="hero-portrait pointer-events-none absolute bottom-0 left-1/2 h-[78svh] w-auto max-w-none -translate-x-1/2 object-cover object-top sm:h-[88svh]"
+            src={heroPortraitAsset.url}
+            alt="Side profile portrait of writer Ezekiel Dada"
+            width={1376}
+            height={784}
+            className="hero-portrait pointer-events-none absolute bottom-0 left-1/2 h-[72svh] w-auto min-w-full max-w-none -translate-x-1/2 object-cover object-center sm:h-[86svh]"
           />
           <div
             className="pointer-events-none absolute inset-0"
