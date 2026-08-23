@@ -348,7 +348,7 @@ function Index() {
               href="https://www.linkedin.com/in/ezekiel-dada"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block rounded-full border border-border px-8 py-4 text-sm font-medium transition-transform hover:scale-[1.03] hover:bg-secondary"
+              className="inline-block rounded-full border border-accent px-8 py-4 text-sm font-medium text-accent transition-colors hover:bg-accent hover:text-accent-foreground"
             >
               LinkedIn
             </a>
