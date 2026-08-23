@@ -41,7 +41,7 @@ const services = [
   },
   {
     title: "Ghostwriting",
-    copy: "Thoughtful content written in your voice, without taking the spotlight.",
+    copy: "Thoughtful content written in your voice — without me taking the spotlight.",
   },
 ];
 
