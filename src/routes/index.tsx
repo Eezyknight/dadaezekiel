@@ -285,12 +285,22 @@ function Index() {
                       {w.excerpt}
                     </p>
                   </div>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <div className="mt-12">
+        <Link
+          to="/work"
+          className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/40 px-6 py-3 text-sm font-medium text-foreground backdrop-blur transition-colors hover:bg-secondary"
+        >
+          More
+          <span aria-hidden>→</span>
+        </Link>
+      </div>
+    </div>
+  </section>
 
       {/* Testimonials */}
       <section className="border-t border-border">
