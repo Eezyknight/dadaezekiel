@@ -41,7 +41,7 @@ const services = [
   },
   {
     title: "Ghostwriting",
-    copy: "Thoughtful content written in your voice, without taking the spotlight.",
+    copy: "Thoughtful content written in your voice — without me taking the spotlight.",
   },
 ];
 
@@ -295,7 +295,7 @@ function Index() {
       {/* Testimonials */}
       <section className="border-t border-border">
         <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
-          <p className="eyebrow">Kind Words</p>
+          <p className="eyebrow">FEEDBACK</p>
           <div className="mt-12 grid gap-5 md:grid-cols-3">
             {testimonials.map((t, i) => (
               <blockquote key={i} className="rounded-2xl border border-border bg-card p-8">
@@ -320,13 +320,12 @@ function Index() {
         <div className="mx-auto max-w-3xl px-5 py-28 text-center sm:px-8">
           <p className="eyebrow">Next Draft</p>
           <h2 className="display-type mt-5 text-4xl leading-tight sm:text-6xl">
-            Tell me what you're
+            Reach me on
             <br />
-            <span className="text-accent italic">trying to say.</span>
+            <span className="text-accent italic">{"\n"}</span>
           </h2>
           <p className="mx-auto mt-6 max-w-md leading-relaxed text-muted-foreground">
-            Send a paragraph about the piece, the deadline and the reader. I reply to every note
-            within two working days.
+            {"\n"}
           </p>
           <a
             href="mailto:dadaezekiel12@gmail.com"
