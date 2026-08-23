@@ -290,10 +290,10 @@ function Index() {
         ))}
       </ul>
 
-      <div className="mt-12">
+      <div className="mt-12 text-center">
         <Link
           to="/work"
-          className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/40 px-6 py-3 text-sm font-medium text-foreground backdrop-blur transition-colors hover:bg-secondary"
+          className="inline-flex items-center gap-2 rounded-full border border-accent px-6 py-3 text-sm font-medium text-accent transition-colors hover:bg-accent hover:text-accent-foreground"
         >
           More
           <span aria-hidden>→</span>
@@ -348,7 +348,7 @@ function Index() {
               href="https://www.linkedin.com/in/ezekiel-dada"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block rounded-full border border-border px-8 py-4 text-sm font-medium transition-transform hover:scale-[1.03] hover:bg-secondary"
+              className="inline-block rounded-full border border-accent px-8 py-4 text-sm font-medium text-accent transition-colors hover:bg-accent hover:text-accent-foreground"
             >
               LinkedIn
             </a>
