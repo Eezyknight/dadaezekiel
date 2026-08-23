@@ -337,12 +337,22 @@ function Index() {
           <p className="mx-auto mt-6 max-w-md leading-relaxed text-muted-foreground">
             {"\n"}
           </p>
-          <a
-            href="mailto:dadaezekiel12@gmail.com"
-            className="mt-10 inline-block rounded-full bg-primary px-8 py-4 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
-          >
-            dadaezekiel12@gmail.com
-          </a>
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a
+              href="mailto:dadaezekiel12@gmail.com"
+              className="inline-block rounded-full bg-primary px-8 py-4 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
+            >
+              dadaezekiel12@gmail.com
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ezekiel-dada"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-full border border-border px-8 py-4 text-sm font-medium transition-transform hover:scale-[1.03] hover:bg-secondary"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
       </section>
 
