@@ -1,7 +1,8 @@
+import { Link } from "@tanstack/react-router";
 import { ThemeToggle } from "./ThemeToggle";
 
 const links = [
-  { label: "Work", href: "#work" },
+  { label: "Work", to: "/work" },
   { label: "Services", href: "#services" },
   { label: "About", href: "#about" },
 ];
