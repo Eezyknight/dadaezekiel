@@ -33,7 +33,7 @@ const work = [
 export const Route = createFileRoute("/work")({
   head: () => ({
     meta: [
-      { title: "Selected Work — Ezekiel Dada" },
+      { title: "Ezekiel Dada - SaaS & TechContent Writer" },
       {
         name: "description",
         content:

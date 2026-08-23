@@ -6,7 +6,7 @@ import ezekielPortrait from "@/assets/ezekiel-portrait.png.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mara Ellison — Writer, Essayist & Brand Storyteller" },
+      { title: "Ezekiel Dada - SaaS & TechContent Writer" },
       {
         name: "description",
         content:
