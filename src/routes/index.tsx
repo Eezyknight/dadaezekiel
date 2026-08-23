@@ -146,12 +146,12 @@ function Index() {
               <span className="font-semibold tracking-[-0.03em]">Dada</span>
             </h1>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <a
-                href="#work"
+              <Link
+                to="/work"
                 className="rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
               >
                 Portfolio
-              </a>
+              </Link>
               <a
                 href="#contact"
                 className="rounded-full border border-border bg-secondary/40 px-6 py-3 text-sm font-medium text-foreground backdrop-blur transition-colors hover:bg-secondary"
