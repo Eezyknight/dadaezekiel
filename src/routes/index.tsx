@@ -234,8 +234,7 @@ function Index() {
             What I write.
           </h2>
           <p className="mt-5 max-w-lg leading-relaxed text-muted-foreground">
-            Writing and editorial work for magazines, founders and studios who need language that
-            carries weight.
+            {"\n"}
           </p>
 
           <div className="mt-14 grid gap-5 md:grid-cols-3">
