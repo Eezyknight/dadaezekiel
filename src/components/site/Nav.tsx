@@ -16,15 +16,25 @@ export function Nav() {
 
         <div className="flex items-center gap-1.5">
           <div className="hidden items-center gap-1 rounded-full bg-secondary/60 p-1 backdrop-blur sm:flex">
-            {links.map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
-                className="rounded-full px-4 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
-              >
-                {l.label}
-              </a>
-            ))}
+            {links.map((l) =>
+              "to" in l ? (
+                <Link
+                  key={l.to}
+                  to={l.to}
+                  className="rounded-full px-4 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+                >
+                  {l.label}
+                </Link>
+              ) : (
+                <a
+                  key={l.href}
+                  href={l.href}
+                  className="rounded-full px-4 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+                >
+                  {l.label}
+                </a>
+              )
+            )}
           </div>
           <ThemeToggle />
           <a
