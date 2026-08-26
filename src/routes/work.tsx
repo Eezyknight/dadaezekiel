@@ -84,7 +84,7 @@ function WorkPage() {
                       <p className="mt-2 text-sm text-muted-foreground">{w.outlet}</p>
                     </div>
                     <div>
-                      <h2 className="display-type text-2xl transition-colors group-hover:text-accent sm:text-3xl">
+                      <h2 className="display-type text-2xl underline decoration-border underline-offset-4 transition-colors group-hover:text-accent group-hover:decoration-accent sm:text-3xl">
                         {w.title}
                       </h2>
                       <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
