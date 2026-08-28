@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
-import heroPortraitAsset from "@/assets/ezekiel-hero.jpg.asset.json";
-import ezekielPortrait from "@/assets/ezekiel-portrait.png.asset.json";
+import heroPortrait from "@/assets/ezekiel-hero.jpg";
+import ezekielPortrait from "@/assets/ezekiel-portrait.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -120,10 +120,10 @@ function Index() {
         <div className="relative flex min-h-[96svh] flex-col justify-end overflow-hidden">
           {/* Portrait */}
           <img
-            src={heroPortraitAsset.url}
+            src={heroPortrait}
             alt="Side profile portrait of writer Ezekiel Dada"
             width={1376}
-            height={784}
+            height={768}
             className="hero-portrait pointer-events-none absolute bottom-0 left-1/2 h-[72svh] w-auto min-w-full max-w-none -translate-x-1/2 object-cover object-center sm:h-[86svh]"
           />
           <div
@@ -131,13 +131,16 @@ function Index() {
             style={{ backgroundImage: "var(--gradient-fade)" }}
           />
 
-          {/* Eyebrow */}
-          <div className="relative mx-auto w-full max-w-7xl px-5 sm:px-8">
-            <p className="rise display-type absolute bottom-[42svh] left-5 max-w-[8em] text-2xl leading-tight text-foreground/90 sm:left-8 sm:text-3xl">
-              SaaS & Tech
-              <br />
-              Content Writer
-            </p>
+          {/* Eyebrow — anchored below the fixed nav (~76px tall) and aligned to its
+              left gutter, so it can never drift into the nav on short viewports. */}
+          <div className="absolute inset-x-0 top-0">
+            <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
+              <p className="rise display-type mt-24 max-w-[8em] text-2xl leading-tight text-foreground/90 sm:mt-28 sm:text-3xl">
+                SaaS & Tech
+                <br />
+                Content Writer
+              </p>
+            </div>
           </div>
 
           {/* Name */}
@@ -216,10 +219,10 @@ function Index() {
           </div>
           <figure className="overflow-hidden rounded-2xl border border-border shadow-lift">
             <img
-              src={ezekielPortrait.url}
+              src={ezekielPortrait}
               alt="Portrait of Ezekiel Dada, SaaS and Tech writer"
-              width={1200}
-              height={900}
+              width={768}
+              height={919}
               loading="lazy"
               className="h-full w-full object-cover"
             />
