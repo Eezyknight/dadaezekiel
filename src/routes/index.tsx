@@ -10,13 +10,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Portfolio of Ezekiel Dada, SaaS and Tech writer: blogs, long-form articles, website copy and ghostwriting.",
+          "SaaS and Tech writer who turns complex ideas into clear, useful content that helps businesses get found, build trust, and convert readers into customers.",
       },
       { property: "og:title", content: "Ezekiel Dada — SaaS & Tech Writer" },
       {
         property: "og:description",
         content:
-          "Essays, editorial features and narrative brand copy. Selected work, services and rates from a writer with 120+ published pieces.",
+          "SaaS and Tech writer who turns complex ideas into clear, useful content that helps businesses get found, build trust, and convert readers into customers.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
