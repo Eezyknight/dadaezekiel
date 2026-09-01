@@ -6,17 +6,17 @@ import ezekielPortrait from "@/assets/ezekiel-portrait.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ezekiel Dada - SaaS & TechContent Writer" },
+      { title: "Ezekiel Dada — SaaS & Tech Writer" },
       {
         name: "description",
         content:
-          "Portfolio of Mara Ellison: long-form essays, narrative brand copy, and ghostwritten features for magazines and founders. Selected work, services and rates.",
+          "SaaS and Tech writer who turns complex ideas into clear, useful content that helps businesses get found, build trust, and convert readers into customers.",
       },
-      { property: "og:title", content: "Mara Ellison — Writer & Brand Storyteller" },
+      { property: "og:title", content: "Ezekiel Dada — SaaS & Tech Writer" },
       {
         property: "og:description",
         content:
-          "Essays, editorial features and narrative brand copy. Selected work, services and rates from a writer with 120+ published pieces.",
+          "SaaS and Tech writer who turns complex ideas into clear, useful content that helps businesses get found, build trust, and convert readers into customers.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

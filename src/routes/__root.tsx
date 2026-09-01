@@ -77,17 +77,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Mara Ellison — Writer & Essayist" },
+      { title: "Ezekiel Dada — SaaS & Tech Writer" },
       {
         name: "description",
         content:
-          "Portfolio of Mara Ellison, writer and essayist: long-form essays, brand narrative and ghostwriting.",
+          "Portfolio of Ezekiel Dada, SaaS and Tech writer: blogs, long-form articles, website copy and ghostwriting.",
       },
-      { name: "author", content: "Mara Ellison" },
-      { property: "og:title", content: "Mara Ellison — Writer & Essayist" },
+      { name: "author", content: "Ezekiel Dada" },
+      { property: "og:title", content: "Ezekiel Dada — SaaS & Tech Writer" },
       {
         property: "og:description",
-        content: "Essays, editorial features and narrative brand copy.",
+        content: "SaaS and technology writing: blogs, long-form articles, website copy and ghostwriting.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
