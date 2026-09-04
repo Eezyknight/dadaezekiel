@@ -43,6 +43,10 @@ const services = [
     title: "Ghostwriting",
     copy: "Thoughtful content written in your voice — without me taking the spotlight.",
   },
+  {
+    title: "Thought Leadership",
+    copy: "Insightful perspectives that shape conversations and build authority.",
+  },
 ];
 
 const work = [
