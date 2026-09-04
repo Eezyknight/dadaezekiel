@@ -41,7 +41,7 @@ const services = [
   },
   {
     title: "Thought Leadership",
-    copy: "A thought-provoking examination of how AI software agents are challenging traditional SaaS models and redefining what businesses expect from software.",
+    copy: "Insightful perspectives that shape conversations and build authority.",
   },
   {
     title: "Ghostwriting",
