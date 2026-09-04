@@ -43,6 +43,10 @@ const services = [
     title: "Ghostwriting",
     copy: "Thoughtful content written in your voice — without me taking the spotlight.",
   },
+  {
+    title: "Thought Leadership",
+    copy: "Insightful perspectives that shape conversations and build authority.",
+  },
 ];
 
 const work = [
@@ -241,7 +245,7 @@ function Index() {
             {"\n"}
           </p>
 
-          <div className="mt-14 grid gap-5 md:grid-cols-3">
+          <div className="mt-14 grid gap-5 md:grid-cols-4">
             {services.map((s, i) => (
               <article
                 key={s.title}
