@@ -40,12 +40,12 @@ const services = [
     copy: "Clear, persuasive copy that communicates your product, value, and positioning.",
   },
   {
-    title: "Ghostwriting",
-    copy: "Thoughtful content written in your voice — without me taking the spotlight.",
-  },
-  {
     title: "Thought Leadership",
     copy: "Insightful perspectives that shape conversations and build authority.",
+  },
+  {
+    title: "Ghostwriting",
+    copy: "Thoughtful content written in your voice — without me taking the spotlight.",
   },
 ];
 
@@ -67,6 +67,14 @@ const work = [
     excerpt:
       "Wrote a step-by-step guide on sending anonymous SMS through Anonsms, highlighting its speed, safety, privacy, and delivery success rate.",
     link: "https://www.anonsms.com/how-to-send-anonymous-sms",
+  },
+  {
+    title: "Is AI going to kill SaaS? The rise of AI software agents",
+    outlet: "Self-Published",
+    kind: "Thought Leadership",
+    year: "2026",
+    excerpt:
+      "A thought-provoking examination of how AI software agents are challenging traditional SaaS models and redefining what businesses expect from software.",
   },
   {
     title: "How to Block Your Number: 5 Easy Ways",
