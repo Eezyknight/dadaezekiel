@@ -69,6 +69,14 @@ const work = [
     link: "https://www.anonsms.com/how-to-send-anonymous-sms",
   },
   {
+    title: "Is AI going to kill SaaS? The rise of AI software agents",
+    outlet: "Self-Published",
+    kind: "Thought Leadership",
+    year: "2026",
+    excerpt:
+      "A thought-provoking examination of how AI software agents are challenging traditional SaaS models and redefining what businesses expect from software.",
+  },
+  {
     title: "How to Block Your Number: 5 Easy Ways",
     outlet: "Confidential",
     kind: "Ghostwriting",
