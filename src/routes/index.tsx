@@ -40,12 +40,12 @@ const services = [
     copy: "Clear, persuasive copy that communicates your product, value, and positioning.",
   },
   {
-    title: "Ghostwriting",
-    copy: "Thoughtful content written in your voice — without me taking the spotlight.",
+    title: "Thought Leadership",
+    copy: "A thought-provoking examination of how AI software agents are challenging traditional SaaS models and redefining what businesses expect from software.",
   },
   {
-    title: "Thought Leadership",
-    copy: "Insightful perspectives that shape conversations and build authority.",
+    title: "Ghostwriting",
+    copy: "Thoughtful content written in your voice — without me taking the spotlight.",
   },
 ];
 
