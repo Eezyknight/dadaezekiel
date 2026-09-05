@@ -129,7 +129,7 @@ function WorkPage() {
               ← Back home
             </Link>
             <a
-              href="mailto:dadaezekiel12@gmail.com"
+              href="/#contact"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
             >
               Start a project
