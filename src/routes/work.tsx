@@ -27,6 +27,7 @@ const work = [
     year: "2026",
     excerpt:
       "A thought-provoking examination of how AI software agents are challenging traditional SaaS models and redefining what businesses expect from software.",
+    to: "/articles/is-ai-going-to-kill-saas",
   },
   {
     title: "How to Block Your Number: 5 Easy Ways",
@@ -76,50 +77,48 @@ function WorkPage() {
           </h1>
 
           <ul className="mt-14 divide-y divide-border border-y border-border">
-            {work.map((w) => (
-              <li key={w.title}>
-                {w.link ? (
-                  <a
-                    href={w.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group grid gap-4 py-8 transition-colors hover:bg-secondary/40 sm:grid-cols-[auto_1fr] sm:gap-10 sm:px-2"
-                  >
-                    <div className="sm:w-52">
-                      <p className="eyebrow">
-                        {w.kind} · {w.year}
-                      </p>
-                      <p className="mt-2 text-sm text-muted-foreground">{w.outlet}</p>
-                    </div>
-                    <div>
-                      <h2 className="display-type text-2xl underline decoration-border underline-offset-4 transition-colors group-hover:text-accent group-hover:decoration-accent sm:text-3xl">
-                        {w.title}
-                      </h2>
-                      <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                        {w.excerpt}
-                      </p>
-                    </div>
-                  </a>
-                ) : (
-                  <div className="group grid gap-4 py-8 transition-colors hover:bg-secondary/40 sm:grid-cols-[auto_1fr] sm:gap-10 sm:px-2">
-                    <div className="sm:w-52">
-                      <p className="eyebrow">
-                        {w.kind} · {w.year}
-                      </p>
-                      <p className="mt-2 text-sm text-muted-foreground">{w.outlet}</p>
-                    </div>
-                    <div>
-                      <h2 className="display-type text-2xl transition-colors group-hover:text-accent sm:text-3xl">
-                        {w.title}
-                      </h2>
-                      <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                        {w.excerpt}
-                      </p>
-                    </div>
+            {work.map((w) => {
+              const cardClass =
+                "group grid gap-4 py-8 transition-colors hover:bg-secondary/40 sm:grid-cols-[auto_1fr] sm:gap-10 sm:px-2";
+              const inner = (
+                <>
+                  <div className="sm:w-52">
+                    <p className="eyebrow">
+                      {w.kind} · {w.year}
+                    </p>
+                    <p className="mt-2 text-sm text-muted-foreground">{w.outlet}</p>
                   </div>
-                )}
-              </li>
-            ))}
+                  <div>
+                    <h2 className="display-type text-2xl underline decoration-border underline-offset-4 transition-colors group-hover:text-accent group-hover:decoration-accent sm:text-3xl">
+                      {w.title}
+                    </h2>
+                    <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                      {w.excerpt}
+                    </p>
+                  </div>
+                </>
+              );
+              if ("to" in w && w.to) {
+                return (
+                  <li key={w.title}>
+                    <Link to={w.to} className={cardClass}>
+                      {inner}
+                    </Link>
+                  </li>
+                );
+              }
+              return (
+                <li key={w.title}>
+                  {w.link ? (
+                    <a href={w.link} target="_blank" rel="noopener noreferrer" className={cardClass}>
+                      {inner}
+                    </a>
+                  ) : (
+                    <div className={cardClass}>{inner}</div>
+                  )}
+                </li>
+              );
+            })}
           </ul>
 
           <div className="mt-14 flex flex-col gap-4 sm:flex-row sm:items-center">
