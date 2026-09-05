@@ -69,7 +69,7 @@ const work = [
     link: "https://www.anonsms.com/how-to-send-anonymous-sms",
   },
   {
-    title: "Is AI going to kill SaaS? The rise of AI software agents",
+    title: "Is AI Going to Kill SaaS? The Rise of AI Software Agents",
     outlet: "Self-Published",
     kind: "Thought Leadership",
     year: "2026",
