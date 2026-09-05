@@ -75,6 +75,7 @@ const work = [
     year: "2026",
     excerpt:
       "A thought-provoking examination of how AI software agents are challenging traditional SaaS models and redefining what businesses expect from software.",
+    to: "/articles/is-ai-going-to-kill-saas",
   },
   {
     title: "How to Block Your Number: 5 Easy Ways",
@@ -279,14 +280,11 @@ function Index() {
           </h2>
 
           <ul className="mt-14 divide-y divide-border border-y border-border">
-            {work.map((w) => (
-              <li key={w.title}>
-                <a
-                  href={w.link || "#contact"}
-                  target={w.link ? "_blank" : undefined}
-                  rel={w.link ? "noopener noreferrer" : undefined}
-                  className="group grid gap-4 py-8 transition-colors hover:bg-secondary/40 sm:grid-cols-[auto_1fr] sm:gap-10 sm:px-2"
-                >
+            {work.map((w) => {
+              const cardClass =
+                "group grid gap-4 py-8 transition-colors hover:bg-secondary/40 sm:grid-cols-[auto_1fr] sm:gap-10 sm:px-2";
+              const inner = (
+                <>
                   <div className="sm:w-52">
                     <p className="eyebrow">
                       {w.kind} · {w.year}
@@ -301,9 +299,27 @@ function Index() {
                       {w.excerpt}
                     </p>
                   </div>
-            </a>
-          </li>
-        ))}
+                </>
+              );
+              return (
+                <li key={w.title}>
+                  {"to" in w && w.to ? (
+                    <Link to={w.to} className={cardClass}>
+                      {inner}
+                    </Link>
+                  ) : (
+                    <a
+                      href={w.link || "#contact"}
+                      target={w.link ? "_blank" : undefined}
+                      rel={w.link ? "noopener noreferrer" : undefined}
+                      className={cardClass}
+                    >
+                      {inner}
+                    </a>
+                  )}
+                </li>
+              );
+            })}
       </ul>
 
       <div className="mt-12 text-center">
