@@ -40,6 +40,10 @@ const services = [
     copy: "Clear, persuasive copy that communicates your product, value, and positioning.",
   },
   {
+    title: "Thought Leadership",
+    copy: "Insightful perspectives that shape conversations and build authority.",
+  },
+  {
     title: "Ghostwriting",
     copy: "Thoughtful content written in your voice — without me taking the spotlight.",
   },
@@ -63,6 +67,15 @@ const work = [
     excerpt:
       "Wrote a step-by-step guide on sending anonymous SMS through Anonsms, highlighting its speed, safety, privacy, and delivery success rate.",
     link: "https://www.anonsms.com/how-to-send-anonymous-sms",
+  },
+  {
+    title: "Is AI Going to Kill SaaS? The Rise of AI Software Agents",
+    outlet: "Self-Published",
+    kind: "Thought Leadership",
+    year: "2026",
+    excerpt:
+      "A thought-provoking examination of how AI software agents are challenging traditional SaaS models and redefining what businesses expect from software.",
+    to: "/articles/is-ai-going-to-kill-saas",
   },
   {
     title: "How to Block Your Number: 5 Easy Ways",
@@ -241,7 +254,7 @@ function Index() {
             {"\n"}
           </p>
 
-          <div className="mt-14 grid gap-5 md:grid-cols-3">
+          <div className="mt-14 grid gap-5 md:grid-cols-4">
             {services.map((s, i) => (
               <article
                 key={s.title}
@@ -267,14 +280,11 @@ function Index() {
           </h2>
 
           <ul className="mt-14 divide-y divide-border border-y border-border">
-            {work.map((w) => (
-              <li key={w.title}>
-                <a
-                  href={w.link || "#contact"}
-                  target={w.link ? "_blank" : undefined}
-                  rel={w.link ? "noopener noreferrer" : undefined}
-                  className="group grid gap-4 py-8 transition-colors hover:bg-secondary/40 sm:grid-cols-[auto_1fr] sm:gap-10 sm:px-2"
-                >
+            {work.map((w) => {
+              const cardClass =
+                "group grid gap-4 py-8 transition-colors hover:bg-secondary/40 sm:grid-cols-[auto_1fr] sm:gap-10 sm:px-2";
+              const inner = (
+                <>
                   <div className="sm:w-52">
                     <p className="eyebrow">
                       {w.kind} · {w.year}
@@ -289,9 +299,27 @@ function Index() {
                       {w.excerpt}
                     </p>
                   </div>
-            </a>
-          </li>
-        ))}
+                </>
+              );
+              return (
+                <li key={w.title}>
+                  {"to" in w && w.to ? (
+                    <Link to={w.to} className={cardClass}>
+                      {inner}
+                    </Link>
+                  ) : (
+                    <a
+                      href={w.link || "#contact"}
+                      target={w.link ? "_blank" : undefined}
+                      rel={w.link ? "noopener noreferrer" : undefined}
+                      className={cardClass}
+                    >
+                      {inner}
+                    </a>
+                  )}
+                </li>
+              );
+            })}
       </ul>
 
       <div className="mt-12 text-center">

@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorkRouteImport } from './routes/work'
+import { Route as ArticlesIsAiGoingToKillSaasRouteImport } from './routes/articles.is-ai-going-to-kill-saas'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -22,31 +23,41 @@ const WorkRoute = WorkRouteImport.update({
   path: '/work',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ArticlesIsAiGoingToKillSaasRoute =
+  ArticlesIsAiGoingToKillSaasRouteImport.update({
+    id: '/articles/is-ai-going-to-kill-saas',
+    path: '/articles/is-ai-going-to-kill-saas',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/work': typeof WorkRoute
+  '/articles/is-ai-going-to-kill-saas': typeof ArticlesIsAiGoingToKillSaasRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/work': typeof WorkRoute
+  '/articles/is-ai-going-to-kill-saas': typeof ArticlesIsAiGoingToKillSaasRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/work': typeof WorkRoute
+  '/articles/is-ai-going-to-kill-saas': typeof ArticlesIsAiGoingToKillSaasRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/work'
+  fullPaths: '/' | '/work' | '/articles/is-ai-going-to-kill-saas'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/work'
-  id: '__root__' | '/' | '/work'
+  to: '/' | '/work' | '/articles/is-ai-going-to-kill-saas'
+  id: '__root__' | '/' | '/work' | '/articles/is-ai-going-to-kill-saas'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   WorkRoute: typeof WorkRoute
+  ArticlesIsAiGoingToKillSaasRoute: typeof ArticlesIsAiGoingToKillSaasRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -65,12 +76,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WorkRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/articles/is-ai-going-to-kill-saas': {
+      id: '/articles/is-ai-going-to-kill-saas'
+      path: '/articles/is-ai-going-to-kill-saas'
+      fullPath: '/articles/is-ai-going-to-kill-saas'
+      preLoaderRoute: typeof ArticlesIsAiGoingToKillSaasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   WorkRoute: WorkRoute,
+  ArticlesIsAiGoingToKillSaasRoute: ArticlesIsAiGoingToKillSaasRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
