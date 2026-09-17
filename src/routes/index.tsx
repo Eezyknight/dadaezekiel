@@ -53,44 +53,8 @@ const services = [
   },
 ];
 
-const work = [
-  {
-    title: "Best OnlyFans Search Engines in 2026",
-    outlet: "Self-Published",
-    kind: "Blog",
-    year: "2026",
-    excerpt:
-      "A compared list of the top OnlyFans search engines for finding specific creators — with natural promotion of my client’s brand as the best option.",
-    link: "https://blog.clarityverify.com/onlyfans-search-engines-finders/",
-  },
-  {
-    title: "Anonsms: How to Send Anonymous SMS Online",
-    outlet: "Company",
-    kind: "Web Copy",
-    year: "2026",
-    excerpt:
-      "Wrote a step-by-step guide on sending anonymous SMS through Anonsms, highlighting its speed, safety, privacy, and delivery success rate.",
-    link: "https://www.anonsms.com/how-to-send-anonymous-sms",
-  },
-  {
-    title: "Is AI Going to Kill SaaS? The Rise of AI Software Agents",
-    outlet: "Self-Published",
-    kind: "Thought Leadership",
-    year: "2026",
-    excerpt:
-      "A thought-provoking examination of how AI software agents are challenging traditional SaaS models and redefining what businesses expect from software.",
-    to: "/articles/is-ai-going-to-kill-saas",
-  },
-  {
-    title: "How to Block Your Number: 5 Easy Ways",
-    outlet: "Confidential",
-    kind: "Ghostwriting",
-    year: "2026",
-    excerpt:
-      "Detailed 1-1 meeting, research, and writing for a founder who’s very busy — but now gets quoted for it.",
-    link: "https://www.anonsms.com/blog/how-to-block-your-number/",
-  },
-];
+
+
 
 
 
@@ -244,68 +208,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Work */}
-      <section id="work" className="border-t border-border">
-        <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
-          <p className="eyebrow">Selected Work</p>
-          <h2 className="display-type mt-4 text-4xl leading-tight sm:text-5xl">
-            Pieces worth your time.
-          </h2>
-
-          <ul className="mt-14 divide-y divide-border border-y border-border">
-            {work.map((w) => {
-              const cardClass =
-                "group grid gap-4 py-8 transition-colors hover:bg-secondary/40 sm:grid-cols-[auto_1fr] sm:gap-10 sm:px-2";
-              const inner = (
-                <>
-                  <div className="sm:w-52">
-                    <p className="eyebrow">
-                      {w.kind} · {w.year}
-                    </p>
-                    <p className="mt-2 text-sm text-muted-foreground">{w.outlet}</p>
-                  </div>
-                  <div>
-                    <h3 className="display-type text-2xl underline decoration-border underline-offset-4 transition-colors group-hover:text-accent group-hover:decoration-accent sm:text-3xl">
-                      {w.title}
-                    </h3>
-                    <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                      {w.excerpt}
-                    </p>
-                  </div>
-                </>
-              );
-              return (
-                <li key={w.title}>
-                  {"to" in w && w.to ? (
-                    <Link to={w.to} className={cardClass}>
-                      {inner}
-                    </Link>
-                  ) : (
-                    <a
-                      href={w.link || "#contact"}
-                      target={w.link ? "_blank" : undefined}
-                      rel={w.link ? "noopener noreferrer" : undefined}
-                      className={cardClass}
-                    >
-                      {inner}
-                    </a>
-                  )}
-                </li>
-              );
-            })}
-      </ul>
-
-      <div className="mt-12 text-center">
-        <Link
-          to="/work"
-          className="inline-flex items-center gap-2 rounded-full border border-accent px-6 py-3 text-sm font-medium text-accent transition-colors hover:bg-accent hover:text-accent-foreground"
-        >
-          More
-          <span aria-hidden>→</span>
-        </Link>
-      </div>
-    </div>
-  </section>
 
 
       {/* Contact */}
