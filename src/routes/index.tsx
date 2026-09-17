@@ -88,18 +88,6 @@ const work = [
   },
 ];
 
-const marquee = [
-  "ClarityVerify",
-  "Anonsms",
-  "NotifyPartners",
-  "AiPPT",
-  "Gleepackaging",
-  "Clingold",
-  "Kesheen",
-  "Nendine",
-  "Tulipiece",
-  "Zearrow",
-];
 
 const testimonials = [
   {
@@ -149,9 +137,9 @@ function Index() {
           <div className="absolute inset-x-0 top-0">
             <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
               <p className="rise display-type mt-24 max-w-[8em] text-2xl leading-tight text-foreground/90 sm:mt-28 sm:text-3xl">
-                SaaS & Tech
+                Identity Verification &
                 <br />
-                Content Writer
+                Fraud Prevention Writer
               </p>
             </div>
           </div>
@@ -192,17 +180,6 @@ function Index() {
         </div>
       </section>
 
-
-      {/* Marquee of bylines */}
-      <section aria-label="Published in" className="overflow-hidden border-y border-border py-6">
-        <div className="marquee-track flex w-max items-center gap-12 whitespace-nowrap">
-          {[...marquee, ...marquee].map((m, i) => (
-            <span key={i} className="display-type text-xl text-muted-foreground">
-              {m}
-            </span>
-          ))}
-        </div>
-      </section>
 
       {/* Featured / the writer's cut */}
       <section id="about" className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
