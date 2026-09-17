@@ -181,17 +181,6 @@ function Index() {
       </section>
 
 
-      {/* Marquee of bylines */}
-      <section aria-label="Published in" className="overflow-hidden border-y border-border py-6">
-        <div className="marquee-track flex w-max items-center gap-12 whitespace-nowrap">
-          {[...marquee, ...marquee].map((m, i) => (
-            <span key={i} className="display-type text-xl text-muted-foreground">
-              {m}
-            </span>
-          ))}
-        </div>
-      </section>
-
       {/* Featured / the writer's cut */}
       <section id="about" className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center">
