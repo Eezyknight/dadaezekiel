@@ -88,18 +88,6 @@ const work = [
   },
 ];
 
-const marquee = [
-  "ClarityVerify",
-  "Anonsms",
-  "NotifyPartners",
-  "AiPPT",
-  "Gleepackaging",
-  "Clingold",
-  "Kesheen",
-  "Nendine",
-  "Tulipiece",
-  "Zearrow",
-];
 
 const testimonials = [
   {
@@ -149,9 +137,9 @@ function Index() {
           <div className="absolute inset-x-0 top-0">
             <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
               <p className="rise display-type mt-24 max-w-[8em] text-2xl leading-tight text-foreground/90 sm:mt-28 sm:text-3xl">
-                SaaS & Tech
+                Identity Verification &
                 <br />
-                Content Writer
+                Fraud Prevention Writer
               </p>
             </div>
           </div>
