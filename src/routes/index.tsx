@@ -190,14 +190,24 @@ function Index() {
               SaaS & Tech Writer.
             </h2>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
-              I'm a SaaS and Tech writer who turns complex ideas into clear, useful content that
-              helps businesses get found, build trust, and convert readers into customers.
+              I specialize in writing identity verification, fraud prevention, and digital trust
+              content, turning complex topics like KYC, AML, account security, and online scams
+              into clear, engaging pieces that people can actually understand and businesses can
+              use to build trust.
             </p>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
-              I started writing professionally over five years ago, working across several
-              industries and learning what makes content more than just words on a page. Today, I
-              focus exclusively on SaaS and technology companies, creating blog content and website
-              copy built around a clear understanding of the audience.
+              With 5+ years of writing experience and a background in content marketing, I create
+              SEO, AEO, and GEO-optimized content designed to help identity and fraud-prevention
+              companies explain their products clearly, answer the questions their customers are
+              asking, and establish authority in a space where trust matters.
+            </p>
+            <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
+              Whether it’s a thought-leadership article, product-focused blog, case study, website
+              copy, or educational guide, I write with one question in mind:
+            </p>
+            <p className="mt-5 max-w-md leading-relaxed text-foreground italic">
+              How can we make a complex problem easier to understand and make the reader trust the
+              solution?
             </p>
             <a
               href="#contact"
