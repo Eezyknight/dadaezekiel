@@ -93,28 +93,6 @@ const work = [
 ];
 
 
-const testimonials = [
-  {
-    quote:
-      "Exceptional writer who understands complex topics and turns them into clear, engaging, and search-focused content.",
-    name: "ClarityVerify",
-    role: "",
-  },
-  {
-    quote:
-      "Ezekiel hit the pinnacle with the set of copies he wrote for our website. He’s the best of the best.",
-    name: "Anonsms",
-    role: "",
-  },
-  {
-    quote:
-      "He could relay our SaaS product with any topic and make us stand out. I didn’t have to go back-and-forth with him.",
-    name: "",
-    role: "Lead Editor: AiPPT",
-  },
-];
-
-
 function Index() {
   return (
     <div id="top" className="min-h-screen bg-background">
