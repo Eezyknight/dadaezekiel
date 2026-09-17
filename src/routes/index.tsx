@@ -32,20 +32,24 @@ const stats = [
 
 const services = [
   {
-    title: "Blogs & Long-Form Articles",
-    copy: "Research-driven SaaS and Tech content that informs, ranks, and builds authority.",
+    title: "Thought Leadership Articles",
+    copy: "Expert-driven insights on identity, fraud, and digital trust that help brands lead important industry conversations.",
+  },
+  {
+    title: "Product-focused Blogs",
+    copy: "Research-driven content that explains identity verification and fraud prevention products, use cases, and technologies in clear, practical terms.",
+  },
+  {
+    title: "Case Studies",
+    copy: "Real customer stories that show how identity and fraud solutions solve problems, reduce risk, and create measurable business value.",
   },
   {
     title: "Website & Brand Copy",
-    copy: "Clear, persuasive copy that communicates your product, value, and positioning.",
+    copy: "Clear, persuasive copy that communicates your product, strengthens trust, and makes complex identity and fraud solutions easier to understand.",
   },
   {
-    title: "Thought Leadership",
-    copy: "Insightful perspectives that shape conversations and build authority.",
-  },
-  {
-    title: "Ghostwriting",
-    copy: "Thoughtful content written in your voice — without me taking the spotlight.",
+    title: "Educational Guides",
+    copy: "In-depth resources that simplify complex topics in identity verification, fraud prevention, KYC, AML, and digital security.",
   },
 ];
 
