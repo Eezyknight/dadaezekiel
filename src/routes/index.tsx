@@ -303,29 +303,6 @@ function Index() {
     </div>
   </section>
 
-      {/* Testimonials */}
-      <section className="border-t border-border">
-        <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
-          <p className="eyebrow">FEEDBACK</p>
-          <div className="mt-12 grid gap-5 md:grid-cols-3">
-            {testimonials.map((t, i) => (
-              <blockquote key={i} className="rounded-2xl border border-border bg-card p-8">
-                <p className="display-type text-2xl leading-snug">“{t.quote}”</p>
-                <footer className="mt-6 text-sm text-muted-foreground">
-                  {t.name ? (
-                    <>
-                      &nbsp;—&nbsp;<span className="text-foreground">{t.name}</span>{t.role && ` — ${t.role}`}
-                    </>
-                  ) : (
-                    <>&nbsp;—&nbsp;{t.role}</>
-                  )}
-                </footer>
-              </blockquote>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Contact */}
       <section id="contact" className="border-t border-border bg-spot">
         <div className="mx-auto max-w-3xl px-5 py-28 text-center sm:px-8">
