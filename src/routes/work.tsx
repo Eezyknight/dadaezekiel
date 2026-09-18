@@ -3,6 +3,15 @@ import { Nav } from "@/components/site/Nav";
 
 const work = [
   {
+    title: "Pig Butchering Scams Explained: How Identity Verification Helps",
+    outlet: "Self-Published",
+    kind: "Educational Guide",
+    year: "2026",
+    excerpt:
+      "How pig butchering scams work, why deepfakes and AI agents are making them harder to detect, and how layered identity verification helps platforms stop fraud early.",
+    to: "/articles/pig-butchering-scams-identity-verification",
+  },
+  {
     title: "Best OnlyFans Search Engines in 2026",
     outlet: "Self-Published",
     kind: "Blog",

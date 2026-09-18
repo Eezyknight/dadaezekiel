@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorkRouteImport } from './routes/work'
 import { Route as ArticlesIsAiGoingToKillSaasRouteImport } from './routes/articles.is-ai-going-to-kill-saas'
+import { Route as ArticlesPigButcheringScamsIdentityVerificationRouteImport } from './routes/articles.pig-butchering-scams-identity-verification'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -29,35 +30,58 @@ const ArticlesIsAiGoingToKillSaasRoute =
     path: '/articles/is-ai-going-to-kill-saas',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ArticlesPigButcheringScamsIdentityVerificationRoute =
+  ArticlesPigButcheringScamsIdentityVerificationRouteImport.update({
+    id: '/articles/pig-butchering-scams-identity-verification',
+    path: '/articles/pig-butchering-scams-identity-verification',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/work': typeof WorkRoute
   '/articles/is-ai-going-to-kill-saas': typeof ArticlesIsAiGoingToKillSaasRoute
+  '/articles/pig-butchering-scams-identity-verification': typeof ArticlesPigButcheringScamsIdentityVerificationRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/work': typeof WorkRoute
   '/articles/is-ai-going-to-kill-saas': typeof ArticlesIsAiGoingToKillSaasRoute
+  '/articles/pig-butchering-scams-identity-verification': typeof ArticlesPigButcheringScamsIdentityVerificationRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/work': typeof WorkRoute
   '/articles/is-ai-going-to-kill-saas': typeof ArticlesIsAiGoingToKillSaasRoute
+  '/articles/pig-butchering-scams-identity-verification': typeof ArticlesPigButcheringScamsIdentityVerificationRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/work' | '/articles/is-ai-going-to-kill-saas'
+  fullPaths:
+    | '/'
+    | '/work'
+    | '/articles/is-ai-going-to-kill-saas'
+    | '/articles/pig-butchering-scams-identity-verification'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/work' | '/articles/is-ai-going-to-kill-saas'
-  id: '__root__' | '/' | '/work' | '/articles/is-ai-going-to-kill-saas'
+  to:
+    | '/'
+    | '/work'
+    | '/articles/is-ai-going-to-kill-saas'
+    | '/articles/pig-butchering-scams-identity-verification'
+  id:
+    | '__root__'
+    | '/'
+    | '/work'
+    | '/articles/is-ai-going-to-kill-saas'
+    | '/articles/pig-butchering-scams-identity-verification'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   WorkRoute: typeof WorkRoute
   ArticlesIsAiGoingToKillSaasRoute: typeof ArticlesIsAiGoingToKillSaasRoute
+  ArticlesPigButcheringScamsIdentityVerificationRoute: typeof ArticlesPigButcheringScamsIdentityVerificationRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -83,6 +107,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArticlesIsAiGoingToKillSaasRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/articles/pig-butchering-scams-identity-verification': {
+      id: '/articles/pig-butchering-scams-identity-verification'
+      path: '/articles/pig-butchering-scams-identity-verification'
+      fullPath: '/articles/pig-butchering-scams-identity-verification'
+      preLoaderRoute: typeof ArticlesPigButcheringScamsIdentityVerificationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -90,6 +121,8 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   WorkRoute: WorkRoute,
   ArticlesIsAiGoingToKillSaasRoute: ArticlesIsAiGoingToKillSaasRoute,
+  ArticlesPigButcheringScamsIdentityVerificationRoute:
+    ArticlesPigButcheringScamsIdentityVerificationRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
