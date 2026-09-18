@@ -257,7 +257,70 @@ function Index() {
         </div>
       </section>
 
+      {/* Selected Work */}
+      <section id="work" className="border-t border-border">
+        <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
+          <p className="eyebrow">Selected Work</p>
+          <h2 className="display-type mt-4 max-w-2xl text-4xl leading-tight sm:text-5xl">
+            Pieces worth your time.
+          </h2>
 
+          <ul className="mt-14 divide-y divide-border border-y border-border">
+            {selectedWork.map((w) => {
+              const cardClass =
+                "group grid gap-4 py-8 transition-colors hover:bg-secondary/40 sm:grid-cols-[auto_1fr] sm:gap-10 sm:px-2";
+              const inner = (
+                <>
+                  <div className="sm:w-52">
+                    <p className="eyebrow">
+                      {w.kind} · {w.year}
+                    </p>
+                    <p className="mt-2 text-sm text-muted-foreground">{w.outlet}</p>
+                  </div>
+                  <div>
+                    <h3 className="display-type text-2xl underline decoration-border underline-offset-4 transition-colors group-hover:text-accent group-hover:decoration-accent sm:text-3xl">
+                      {w.title}
+                    </h3>
+                    <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                      {w.excerpt}
+                    </p>
+                  </div>
+                </>
+              );
+              if ("to" in w && w.to) {
+                return (
+                  <li key={w.title}>
+                    <Link to={w.to} className={cardClass}>
+                      {inner}
+                    </Link>
+                  </li>
+                );
+              }
+              return (
+                <li key={w.title}>
+                  {w.link ? (
+                    <a href={w.link} target="_blank" rel="noopener noreferrer" className={cardClass}>
+                      {inner}
+                    </a>
+                  ) : (
+                    <div className={cardClass}>{inner}</div>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+
+          <div className="mt-14 flex justify-center">
+            <Link
+              to="/work"
+              className="inline-flex items-center gap-2 rounded-full border border-accent px-6 py-3 text-sm font-medium text-accent transition-colors hover:bg-accent hover:text-accent-foreground"
+            >
+              More
+              <span aria-hidden>→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Contact */}
       <section id="contact" className="border-t border-border bg-spot">
