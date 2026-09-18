@@ -53,6 +53,55 @@ const services = [
   },
 ];
 
+const selectedWork = [
+  {
+    title: "Pig Butchering Scams Explained: How Identity Verification Helps",
+    outlet: "Self-Published",
+    kind: "Educational Guide",
+    year: "2026",
+    excerpt:
+      "How pig butchering scams work, why deepfakes and AI agents are making them harder to detect, and how layered identity verification helps platforms stop fraud early.",
+    to: "/articles/pig-butchering-scams-identity-verification",
+  },
+  {
+    title: "Best OnlyFans Search Engines in 2026",
+    outlet: "Self-Published",
+    kind: "Blog",
+    year: "2026",
+    excerpt:
+      "A compared list of the top OnlyFans search engines for finding specific creators — with natural promotion of my client’s brand as the best option.",
+    link: "https://blog.clarityverify.com/onlyfans-search-engines-finders/",
+  },
+  {
+    title: "Anonsms: How to Send Anonymous SMS Online",
+    outlet: "Company",
+    kind: "Web Copy",
+    year: "2026",
+    excerpt:
+      "Wrote a step-by-step guide on sending anonymous SMS through Anonsms, highlighting its speed, safety, privacy, and delivery success rate.",
+    link: "https://www.anonsms.com/how-to-send-anonymous-sms",
+  },
+  {
+    title: "Is AI going to kill SaaS? The rise of AI software agents",
+    outlet: "Self-Published",
+    kind: "Thought Leadership",
+    year: "2026",
+    excerpt:
+      "A thought-provoking examination of how AI software agents are challenging traditional SaaS models and redefining what businesses expect from software.",
+    to: "/articles/is-ai-going-to-kill-saas",
+  },
+  {
+    title: "How to Block Your Number: 5 Easy Ways",
+    outlet: "Confidential",
+    kind: "Ghostwriting",
+    year: "2026",
+    excerpt:
+      "Detailed 1-1 meeting, research, and writing for a founder who’s very busy — but now gets quoted for it.",
+    link: "https://www.anonsms.com/blog/how-to-block-your-number/",
+  },
+];
+
+
 
 
 
