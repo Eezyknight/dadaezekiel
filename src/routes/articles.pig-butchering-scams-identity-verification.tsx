@@ -2,9 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
 import pigButcheringImg from "@/assets/pig-butchering.png";
 
-const TITLE = "Pig Butchering Scams Explained: How Identity Verification Helps";
+const TITLE = "Pig Butchering Scams Explained: How Continuous Identity Verification Helps";
 const DESCRIPTION =
-  "How pig butchering scams work, why deepfakes and AI agents make them harder to detect, and how layered identity verification helps platforms stop fraud early.";
+  "How pig butchering scams work, why deepfakes and agentic AI make them harder to detect, and how continuous identity verification helps platforms prevent fraud.";
 
 export const Route = createFileRoute("/articles/pig-butchering-scams-identity-verification")({
   head: () => ({
@@ -43,6 +43,14 @@ function A({ href, children }: { href: string; children: React.ReactNode }) {
   );
 }
 
+const H2 = ({ children }: { children: React.ReactNode }) => (
+  <h2 className="display-type pt-8 text-2xl text-foreground sm:text-3xl">{children}</h2>
+);
+
+const H3 = ({ children }: { children: React.ReactNode }) => (
+  <h3 className="display-type pt-4 text-xl text-foreground">{children}</h3>
+);
+
 function ArticlePage() {
   return (
     <div className="min-h-screen bg-background">
@@ -51,9 +59,7 @@ function ArticlePage() {
       <main className="pt-28">
         <article className="mx-auto max-w-3xl px-5 py-16 sm:px-8">
           <p className="eyebrow">Educational Guide · 2026</p>
-          <h1 className="display-type mt-4 text-4xl leading-tight sm:text-5xl">
-            Pig Butchering Scams Explained: How Continuous Identity Verification Helps
-          </h1>
+          <h1 className="display-type mt-4 text-4xl leading-tight sm:text-5xl">{TITLE}</h1>
           <p className="mt-5 text-sm text-muted-foreground">
             By Ezekiel Dada — Identity Verification &amp; Fraud Prevention Writer
           </p>
@@ -76,7 +82,7 @@ function ArticlePage() {
             <p>
               The scale of the crime is just too big to ignore. The{" "}
               <A href="https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf">
-                FBI's 2025 Internet Crime Report
+                FBI’s 2025 Internet Crime Report
               </A>{" "}
               recorded over 1 million complaints involving $20.877 billion in total losses, with
               cryptocurrency and AI fraud (which are major components of pig butchering scams)
@@ -84,332 +90,367 @@ function ArticlePage() {
             </p>
             <p>
               For dating apps, crypto exchanges, fintech platforms, and other services where users
-              create accounts whether for communication or transaction, it's become more important
+              create accounts whether for communication or transaction, it’s become more important
               than ever to have strict identity checks.
             </p>
             <p>
               In this article, we will examine how pig butchering scams work, why deepfake and AI
               agents are making them harder to detect, and how layered identity verification can
-              help platforms identify fraudulent accounts before it's too late.
+              help platforms identify fraudulent accounts before it’s too late.
             </p>
 
-            <h2 className="display-type pt-8 text-2xl text-foreground sm:text-3xl">TL;DR</h2>
+            <H2>TL;DR</H2>
             <ul className="list-disc space-y-2 pl-6">
               <li>
-                A pig butchering scam is a long-game fraud scheme that combines romance and
-                investment scams.
+                Pig butchering is the fastest-growing and the single costliest fraud scheme reported
+                in the U.S.
               </li>
               <li>
-                Scammers build trust over days, weeks, or months, introduce a fake investment
-                opportunity, then disappear with the money.
+                Scammers build trust with victims for weeks or months, usually through dating apps
+                or social media, before introducing a fake investment platform.
               </li>
               <li>
-                Cryptocurrency and AI fraud contributed to over $12 billion in losses in 2025, with
-                pig butchering scams accounting for a significant amount.
+                AI-generated deepfake video calls and agentic AI grooming have made the scam harder
+                to detect.
               </li>
               <li>
-                Deepfake technology and agentic AI are making pig butchering scams harder to detect.
+                Red flags include reused profile photos, device &amp; location inconsistencies,
+                manipulated identity documents, and unsolicited investment advice.
               </li>
               <li>
-                Platforms need layered identity verification and behavioral monitoring to catch
-                these scams early.
+                Identity verification is an early intervention point. Document authentication,
+                liveness detection, and biometric matching can help establish whether a person’s
+                identity corresponds.
+              </li>
+              <li>
+                Verification should not stop at signups. Behavioral monitoring and risk-based
+                re-verification can help identify accounts that become suspicious after onboarding.
               </li>
             </ul>
 
-            <h2 className="display-type pt-8 text-2xl text-foreground sm:text-3xl">
-              What is a Pig Butchering Scam?
-            </h2>
+            <H2>What is a Pig Butchering Scam?</H2>
             <p>
-              A pig butchering scam is a long-game fraud scheme where a scammer slowly builds a
-              romantic or emotional relationship with a victim, gains their trust, and then
-              manipulates them into sending money through fake investment opportunities.
+              A pig butchering scam is a confidence-based fraud scheme in which the scammer builds a
+              relationship with the target before gradually persuading them to put money into a
+              fraudulent investment opportunity, often involving cryptocurrency.
             </p>
             <p>
-              The name comes from a Chinese phrase (shā zhū pán), which loosely describes how
-              scammers fatten victims emotionally and financially before carrying out the scam.
+              The name was derived from the Chinese term “Sha Zhu Pan”, which means Killing Pig
+              Plate. The scammer sees the target as a “pig” that’s metaphorically fattened with a
+              fake relationship and then “butchered” for their money.
             </p>
             <p>
-              Unlike many scams that happen quickly, pig butchering scams are slow and highly
-              personal. The scammer may spend weeks or months texting, calling, and sharing personal
-              stories to make the relationship feel real before asking for any money. It's often
-              described as a mix between a romance scam and an investment scam.
+              This scam is different from traditional fraud where the scammer immediately asks for
+              money. In a pig butchering scam, the scammer spends time creating a relationship and
+              building trust. The target isn’t asked for any help. If at all, the scammer offers some
+              help to gain credibility.
             </p>
             <p>
-              Even more worrying is that many of these operations are now run by organized groups
-              using scripts, teams, and increasingly AI tools to manage conversations across
-              multiple victims at once.
+              Mind you, the scammer may pose as anyone. A lover, pornstar, businessperson, successful
+              investor, government official, or even someone who has connections with influential
+              people.
             </p>
 
-            <h2 className="display-type pt-8 text-2xl text-foreground sm:text-3xl">
-              Step-by-Step Process of a Pig Butchering Scam
-            </h2>
-
-            <h3 className="display-type pt-4 text-xl text-foreground">1. Initial Contact</h3>
+            <H2>Step-by-Step Process of How the Pig Butchering Scam Works</H2>
             <p>
-              The scam usually starts on a dating app, social media, or a messaging platform. It can
-              be a simple "Hi," a seemingly wrong-number text, or a match on a dating profile. The
-              scammer will look like a real person, most likely attractive, successful, and
-              relatable.
+              To understand why this scam is so prevalent, you need to know the common playbook
+              scammers use:
             </p>
 
-            <h3 className="display-type pt-4 text-xl text-foreground">2. Trust Building</h3>
+            <H3>1. Initial Contact</H3>
             <p>
-              After making the initial contact, the scammer tries to build trust with their victim
-              by sharing personal stories or moving to private messaging apps like WhatsApp or
-              Telegram to make the relationship feel more exclusive and private.
+              The scammer creates a fake account and initiates contact through a dating app, social
+              media platform, or a “wrong text message”. They often do this after lurking around to
+              monitor their targets’ activities.
             </p>
             <p>
-              Some even go as far as having video calls with the victim. These scammers can now use
-              deepfake technology to mimic real faces and voices in live calls, making it harder for
-              a victim to tell they're talking to a fake person.
-            </p>
-            <p>
-              The goal is to build trust through emotional consistency. They will keep this up for
-              days, weeks, or even months before mentioning money.
+              It can be unsuspicious because they might be in the same digital group as the targets,
+              commenting under their posts. They do this so that their name and profile become
+              familiar before a direct conversation.
             </p>
 
-            <h3 className="display-type pt-4 text-xl text-foreground">
-              3. The Investment Opportunity
-            </h3>
+            <H3>2. Trust Building</H3>
             <p>
-              Now that trust is established, the scammer brings up investments. This might come in
-              the form of "crypto trading" or a "private investment platform." They present it like
-              a natural part of their lifestyle or something that has helped them achieve financial
-              success.
+              The scammer doesn’t rush into the investment pitch. Instead, they spend weeks or months
+              establishing and nurturing a relationship. They communicate regularly and share deep,
+              personal information, so that the target becomes vulnerable with them.
             </p>
             <p>
-              They frame it as exclusive or limited to encourage the victim to participate, often
-              saying things like "I can show you how it works."
+              This makes the eventual investment recommendation feel like advice from someone the
+              victim knows rather than a cold investment pitch.
             </p>
 
-            <h3 className="display-type pt-4 text-xl text-foreground">4. The First Investment</h3>
+            <H3>3. The Investment Opportunity</H3>
             <p>
-              The scammer encourages the victim to start small, often a few hundred dollars. They
-              direct the victim to a fake investment platform controlled by the scam group, where
-              the victim sees fake profits accumulate, which they might even be able to withdraw
-              initially to prove the platform is "real."
+              Once trust &amp; vulnerability are established, the scammer introduces an investment
+              opportunity—usually cryptocurrency or another high-return scheme.
             </p>
             <p>
-              This first step is intentionally designed to succeed because it's a psychological
-              trick. The scammer has to earn your trust before asking for more.
+              It comes so naturally that they don’t pitch it. They share it as personal news, more
+              like: “Hey, this is what I’ve been doing to stay afloat and buy assets.” They may even
+              show screenshots of significant gains on their portfolio.
             </p>
 
-            <h3 className="display-type pt-4 text-xl text-foreground">5. Higher Deposits</h3>
+            <H3>4. The First Investment</H3>
             <p>
-              Now that the first investment seems to work, the scammer encourages larger deposits,
-              showing even bigger fake returns. Many victims even end up borrowing money or
-              withdrawing their savings to invest more.
+              The scammer shares a professional-looking crypto platform with the target. The platform
+              looks authentic, with real-time price charts, customer support, and even a demo account.
             </p>
             <p>
-              At this stage, the victim is deeply convinced that the platform is legitimate and the
-              relationship is real, making them much easier to scam.
+              After the target makes the first deposit, they get to withdraw their profit. This
+              convinces them that the investment is real and removes any uncertainty they might have.
             </p>
 
-            <h3 className="display-type pt-4 text-xl text-foreground">6. The Butcher</h3>
+            <H3>5. Higher Deposits</H3>
             <p>
-              This is where the actual scam occurs. The victim tries to withdraw their "profits,"
-              but gets blocked. To withdraw their money, they're often asked to pay "taxes" or
-              "withdrawal fees."
-            </p>
-            <p>
-              Even if the victim pays the fees, they will still not get any money. Some scam groups
-              will delay a bit longer to get even more fees from the victim. But eventually, they
-              disappear completely, abandoning the fake platform along with the victim's money.
+              After the first withdrawal, the scammer advises a larger investment. Encouraged by the
+              first transaction, the victim deposits a lot more money. Some people even liquidate
+              their account.
             </p>
             <p>
-              The FBI runs{" "}
-              <A href="https://www.fbi.gov/news/press-releases/fbi-announces-results-of-operation-level-up">
-                Operation Level Up
-              </A>
-              , which helps identify victims of crypto investment scams. As of 2025, the agency had
-              notified over 8,100 victims, with estimated savings of $511.5 million.
-            </p>
-
-            <h2 className="display-type pt-8 text-2xl text-foreground sm:text-3xl">
-              Real-Life Cases of Pig Butchering Scams
-            </h2>
-
-            <h3 className="display-type pt-4 text-xl text-foreground">
-              <A href="https://www.abc.net.au/news/2025-03-23/anthony-romance-scam-pig-butchering/105083082">
-                Anthony's story: $240,850 lost
-              </A>
-            </h3>
-            <p>
-              Anthony lost $240,850 after being contacted on a dating app. He invested his
-              retirement savings into what he believed was a legitimate crypto platform
-              recommended by someone he thought cared about him.
-            </p>
-            <p className="italic">
-              "I was selling some of my shares, I was taking money out of my super fund, borrowing
-              from people. I have to live with the shame and the humiliation of what I've done, and
-              it's very difficult to live with." — Anthony
-            </p>
-
-            <h3 className="display-type pt-4 text-xl text-foreground">
-              <A href="https://open.spotify.com/episode/3bKgQnbBTFo6mPRSm6OLNi">
-                Carina's story: $122,000 lost
-              </A>
-            </h3>
-            <p>
-              Carina thought she was building a life with the man she was talking to. He gradually
-              introduced her to trading, and she ended up losing $122,000.
-            </p>
-            <p className="italic">
-              "How was I supposed to know? This is my boyfriend. This is the man that I was supposed
-              to be spending the rest of my life with." — Carina
-            </p>
-
-            <h3 className="display-type pt-4 text-xl text-foreground">
-              <A href="https://www.businessinsider.com/pig-butchering-scam-survivor-lost-nearly-1-million-2024-7">
-                Jackie's story: nearly $1 million lost
-              </A>
-            </h3>
-            <p>
-              Jackie, a 52-year-old widow and mother of two, lost nearly $1 million to a scammer who
-              built trust with her over more than a year. After meeting her scammer on a dating app
-              and investing in a fake crypto platform, she is now in debt and lost the money she
-              and her late husband had saved for their children's college tuition.
-            </p>
-
-            <h2 className="display-type pt-8 text-2xl text-foreground sm:text-3xl">
-              Why Pig Butchering Scams Are Harder to Detect in 2026
-            </h2>
-
-            <h3 className="display-type pt-4 text-xl text-foreground">Deepfake Technology</h3>
-            <p>
-              Scammers now use AI-generated profile photos, deepfake video calls, and AI-generated
-              voices to look and sound like real people.
-            </p>
-            <p>
-              <A href="https://www.interpol.int/en/News-and-Events/News/2026/INTERPOL-report-warns-of-explosive-growth-in-AI-enabled-cybercrime">
-                INTERPOL's 2026 report
+              In December 2025, some{" "}
+              <A href="https://www.fbi.gov/how-we-can-help-you/victim-services/national-crimes-and-victim-resources/operation-level-up">
+                victims who were rescued by the FBI
               </A>{" "}
-              warns that AI-enabled fraud is scaling faster than ever, making visual and voice
-              checks less reliable than before.
+              said they were in the process of liquidating their 401K, selling their home, or
+              obtaining a sizable loan. In fact, an elderly man who was surviving on disability pay
+              wanted to cut his food money to invest more.
             </p>
 
-            <h3 className="display-type pt-4 text-xl text-foreground">Agentic AI</h3>
+            <H3>6. The Butcher</H3>
             <p>
-              Scam operations are now using agentic AI tools to manage conversations across hundreds
-              of victims at once, keeping messages consistent, personal, and emotionally convincing
-              without human effort.
+              This is when the money disappears. The victim tries to withdraw the funds (or profit),
+              but encounters a problem. They may be told to pay taxes, processing fees, or other
+              charges before the withdrawal can be completed.
+            </p>
+            <p>
+              However, the demand continues until the victim runs out of money or realizes the
+              investment was fabricated. The scammer then disappears, blocks the victim, or abandons
+              the account.
             </p>
 
-            <h2 className="display-type pt-8 text-2xl text-foreground sm:text-3xl">
-              Red Flags Platforms Should Monitor at Scale
-            </h2>
+            <H2>Real-Life Cases Where Weak Identity Checks Became a Fraud Enabler</H2>
+            <p>These are real-life cases of people who fell to the pig butchering scam.</p>
 
-            <h3 className="display-type pt-4 text-xl text-foreground">
-              Reused or Mismatched Profile Photos
-            </h3>
+            <H3>
+              1. <A href="https://www.abc.net.au/news/2022-11-07/pig-butchering-crypto-romance-investment-scams/101606644">Anthony — Lost $240,850 After a Two-month Relationship</A>
+            </H3>
             <p>
-              Scammers often steal photos from real people or generate entirely new ones with AI.
-              Platforms should watch for profile photos that appear across multiple accounts or
-              don't match other signals about the user.
+              The conversation started when Michelle messaged Anthony (a 48-year-old single father)
+              on Instagram, complimenting his landscape photos. Then, they exchanged WhatsApp numbers
+              and communicated every day. She sent gym selfies. He sent beach pictures.
+            </p>
+            <p className="italic">
+              Anthony: It’s very attractive to meet someone who is not just attractive but also kind
+              and smart.
+            </p>
+            <p className="italic">Michelle: Haha, I’m actually not as good as you said.</p>
+            <p>
+              The conversation went on before she introduced him to a cryptocurrency investment. She
+              first sent a small amount of Ethereum to his Coinbase wallet, which made the investment
+              appear legitimate.
+            </p>
+            <p>
+              Anthony then made an initial deposit of $7,000 and got a profit of $30 that same day.
+              In the next six weeks, he increased his investment to $240,850.
+            </p>
+            <p>
+              Over time, he was unable to withdraw his funds, was locked out of his account, and was
+              unable to reach Michelle.
             </p>
 
-            <h3 className="display-type pt-4 text-xl text-foreground">
-              Device &amp; Location Inconsistencies
-            </h3>
+            <H3>
+              2. <A href="https://open.spotify.com/episode/2zLjm1cIowRXzaI7Of2A7V?si=DWo0iOANS3eAD_hcD_JYNw">Carina — Lost 122,000 and Investigated the Blockchain Herself</A>
+            </H3>
             <p>
-              A scammer claiming to be in one country while consistently logging in from another is
-              a strong signal. Sudden device changes or multiple accounts from one device also raise
-              flags.
+              She met a man on Bumble, called Heaven. He asked that they move the conversation to
+              WhatsApp. Down the line, she was manipulated into investing all the money she had into
+              a cryptocurrency investment scheme.
+            </p>
+            <p>
+              She started by investing $1,000. After trading, she withdrew a couple of hundred
+              dollars into her bank account, which made her feel assured that the investment was real.
+            </p>
+            <p>
+              After telling her to put in more money, she said she didn’t have it, so he asked her to
+              take a loan from her retirement account, and she could use the accumulated profit to pay
+              back the loan. She added $35,000.
+            </p>
+            <p>
+              She watched her money grow to about $60K, but she wasn’t able to withdraw. Eventually,
+              she was told that she had to deposit a total of $150,000 to withdraw. She invested
+              another $4K, plus $38K from a high-interest loan, borrowed $26K from her mom, and Heaven
+              “helped” with $46K.
+            </p>
+            <p>
+              However, when she tried to pull out the $150,000, she was told that she needed to
+              perform a security verification of $27K to unfreeze her account and also provide a
+              picture of her ID. Again, she did. She invested $18K, and Heaven gave her $9K.
+            </p>
+            <p>
+              All of these didn’t get her her money back. After receiving little assistance from the
+              authorities, she began investigating the transactions herself. She eventually traced
+              the funds to a scam group in Thailand.
             </p>
 
-            <h3 className="display-type pt-4 text-xl text-foreground">
-              Low-quality or Manipulated Identity Documents
-            </h3>
+            <H3>
+              3. <A href="https://www.businessinsider.com/romance-scam-cost-retirement-savings-2026-6?r=US&IR=T">Jackie — Lost Approximately $900,000</A>
+            </H3>
             <p>
-              Blurry, cropped, or digitally altered ID documents are common in fraudulent accounts.
-              Document verification with tamper detection can catch these early.
+              Jackie, 61, was preparing for retirement when she joined a dating site. She met a man,
+              Brad Miller, who claimed to be a widowed contractor.
+            </p>
+            <p>
+              Over several months, Brad developed a romantic relationship with her and began talking
+              about their financial future. He eventually introduced her to a supposed cryptocurrency
+              broker named Maximilian.
+            </p>
+            <p>
+              Jackie started by investing $40,000 from her 401(K). The supposed crypto account showed
+              increasing returns, and Brad sent her screenshots of what appeared to be his own account
+              containing millions of dollars. This helped convince her that the investment was
+              legitimate.
+            </p>
+            <p>
+              She eventually transferred substantial portions of her retirement savings and took out
+              a home-equity loan. In total, she lost approximately $900,000.
             </p>
 
-            <h3 className="display-type pt-4 text-xl text-foreground">
-              Unsolicited Investment Advice
-            </h3>
+            <H2>Why Pig Butchering Scams Are Harder to Detect in 2026</H2>
             <p>
-              Accounts that quickly steer conversations toward crypto or investment opportunities —
-              especially on dating platforms — should be flagged for review.
+              There are 2 major technological developments making pig butchering scams harder to
+              detect in 2026.
             </p>
 
-            <h2 className="display-type pt-8 text-2xl text-foreground sm:text-3xl">
-              How Platforms Can Curb Pig Butchering Scam
-            </h2>
-
-            <h3 className="display-type pt-4 text-xl text-foreground">
-              1. Layered Verification at Onboarding
-            </h3>
+            <H3>1. Deepfake Technology</H3>
             <p>
-              Combine document verification, biometric matching, and liveness detection during
-              signup. Tools that{" "}
-              <A href="https://blog.clarityverify.com/detect-ai-generated-images/">
+              While the tactic is the same as always, the technology available to scammers has
+              improved. Deepfake technology can produce synthetic faces, voices, and video content
+              that makes a scammer appear like a real person.
+            </p>
+            <p>
+              <A href="https://www.interpol.int/en/News-and-Events/News/2026/INTERPOL-report-warns-of-increasingly-sophisticated-global-financial-fraud-threat">
+                INTERPOL’s 2026 Global Financial Fraud Threat Assessment
+              </A>{" "}
+              warns that criminal marketplaces now offer “synthetic identity kits” containing
+              AI-generated video avatars, voice clones, and biometric data. It also reports that
+              AI-enabled fraud is estimated to be 4.5 times more profitable than non-AI-enhanced fraud.
+            </p>
+            <p>
+              Many victims say: “I’ve seen the person on video call. They are real.” Whereas the
+              person they saw wasn’t real.
+            </p>
+
+            <H3>2. Agentic AI</H3>
+            <p>
+              Scammers are also using agentic AI to reach a lot of victims. Humans have a natural
+              limit to how many conversations they can maintain per time, so they now use automated
+              systems to handle more interactions. This helps to personalize messages and maintain
+              conversations across a much larger pool of targets.
+            </p>
+            <p>
+              A scammer who once had to choose between dozens of conversations can now manage far
+              more, while tailoring each message to individual targets. This increases the volume of
+              accounts and interactions that safety teams have to assess, making account review
+              increasingly difficult.
+            </p>
+
+            <H2>Red Flags Platforms Should Monitor at Scale</H2>
+            <p>
+              No single signal proves that an account is fraudulent. You have to combine identity,
+              device, behavioral, and transactional signals to identify patterns that individuals
+              would easily not spot.
+            </p>
+
+            <H3>1. Reused or Mismatched Profile Photos</H3>
+            <p>
+              A profile photo that appears on multiple unrelated accounts or websites can indicate
+              impersonation or a fabricated identity.
+            </p>
+
+            <H3>2. Device and Location Inconsistencies</H3>
+            <p>
+              An account claiming to belong to someone in one location but repeatedly logging in
+              from unrelated countries or showing unusual device patterns.
+            </p>
+
+            <H3>3. Low-quality or Manipulated Identity Documents</H3>
+            <p>
+              Blurry documents, inconsistent information, altered fields, suspicious image
+              artifacts, or repeated verification attempts can indicate identity manipulation.
+            </p>
+
+            <H3>4. Unsolicited Investment Advice</H3>
+            <p>
+              A sudden shift from ordinary conversation to cryptocurrency, investment opportunities,
+              or requests to move communication off the platform.
+            </p>
+
+            <H2>How Platforms Can Curb Pig Butchering Scam</H2>
+            <p>
+              Follow these recommendations, and you’d be steps ahead in putting a stop to pig
+              butchering scams on your platform:
+            </p>
+
+            <H3>1. Layered Verification at Onboarding</H3>
+            <p>
+              Have different stages of document authentication, biometric matching, and liveness
+              detection to scan out risk profiles and{" "}
+              <A href="https://blog.clarityverify.com/how-to-detect-ai-generated-images/">
                 detect AI-generated images
-              </A>{" "}
-              can also flag synthetic profile photos before an account goes live.
+              </A>
+              . The objective is not to tire out every user, but to confirm the identity behind every
+              account.
             </p>
 
-            <h3 className="display-type pt-4 text-xl text-foreground">
-              2. Monitor Users Behaviors After Onboarding
-            </h3>
+            <H3>2. Monitor Users Behaviors After Onboarding</H3>
             <p>
-              Verification shouldn't stop at signup. Continuous behavioral monitoring — login
-              patterns, device changes, messaging behavior — helps catch accounts that passed
-              initial checks but behave like scammers later.
+              Integrate identity signals with device intelligence, behavioral analytics, account
+              activity, and other fraud indicators. Escalate accounts when several signals point
+              toward increased risk.
             </p>
 
-            <h3 className="display-type pt-4 text-xl text-foreground">
-              3. Create Clear Reporting and Escalation Paths
-            </h3>
+            <H3>3. Create Clear Reporting and Escalation Paths</H3>
             <p>
-              Make it easy for users to report suspicious behavior, and ensure reports trigger fast
-              review. The sooner a fraudulent account is flagged, the fewer victims it can reach.
+              Users should have an obvious way to report suspected scam accounts, suspicious
+              investment requests, impersonation, and other harmful behavior. The reports should go
+              straight to your Trust &amp; Safety team rather than disappearing into a standalone
+              support queue.
             </p>
 
-            <h3 className="display-type pt-4 text-xl text-foreground">
-              4. Add a Reverse Search Function to Your Platform
-            </h3>
+            <H3>4. Add a Reverse Search Function to Your Platform</H3>
             <p>
-              A{" "}
-              <A href="https://clarityverify.com/">reverse search tool like ClarityVerify</A>{" "}
-              lets users verify who they're actually talking to by searching photos, phone numbers,
-              or usernames — helping them spot stolen or AI-generated identities before trust is
-              built.
+              Integrate a reverse search function like{" "}
+              <A href="https://www.clarityverify.com/">ClarityVerify</A> that lets users search people
+              by their name, phone number, photo, or email address. It can give them a detailed report
+              of every publicly available information about the person.
             </p>
 
-            <h2 className="display-type pt-8 text-2xl text-foreground sm:text-3xl">Conclusion</h2>
+            <H2>Conclusion</H2>
             <p>
-              Pig butchering scams are not going away. They are becoming more sophisticated, more
-              organized, and harder to detect — especially with deepfakes and AI agents in the mix.
-              For platforms where people connect and transact, continuous identity verification and
-              behavioral monitoring are no longer optional. They are the difference between catching
-              fraud early and explaining losses later.
+              Pig butchering scams work because the scammers strategically crawl their way into the
+              hearts of their victims. And as new technology enables these fraudulent acts, it’s
+              become essential that platforms don’t rely solely on onboarding verification or trust
+              between users. There’s the need for continuous monitoring and integration of a reverse
+              search service like ClarityVerify to curb these activities.
             </p>
 
-            <h2 className="display-type pt-8 text-2xl text-foreground sm:text-3xl">FAQ</h2>
-
-            <h3 className="display-type pt-4 text-xl text-foreground">
-              Is money lost to a pig butchering scam recoverable?
-            </h3>
+            <H2>FAQ</H2>
+            <H3>1. Is money lost in a pig butchering scam recoverable?</H3>
             <p>
-              It can be difficult to recover money lost to these scams, especially since payments
-              often pass through crypto platforms and multiple accounts. Reporting quickly to your
-              bank, platform, and authorities (such as the FBI's IC3) improves the chances, but
-              full recovery is rare — which is why prevention matters so much.
+              Recovery is difficult and rare. You should in fact be cautious of recovery services
+              that charge upfront fees to recover lost money. Financial scams should always be
+              reported to the authorities.
             </p>
 
-            <h3 className="display-type pt-4 text-xl text-foreground">
-              Why don't video calls prove someone is real anymore?
-            </h3>
+            <H3>2. Why don’t video calls prove someone is real anymore?</H3>
             <p>
               AI-generated deepfake technology has advanced enough to convincingly fake a live video
-              call, meaning video verification alone is not a reliable way to confirm someone's
+              call, meaning video verification alone is not a reliable way to confirm someone’s
               identity.
             </p>
 
-            <h3 className="display-type pt-4 text-xl text-foreground">
-              How can platforms prevent pig butchering scams?
-            </h3>
+            <H3>3. How can platforms prevent pig butchering scams?</H3>
             <p>
               Platforms can reduce risk by ensuring document verification, biometric matching, and
               liveness detection at account signup, combined with continuous behavioral monitoring
