@@ -135,7 +135,7 @@ function Index() {
               left gutter, so it can never drift into the nav on short viewports. */}
           <div className="absolute inset-x-0 top-0">
             <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
-              <p className="rise display-type mt-24 max-w-[8em] text-2xl leading-tight text-foreground/90 sm:mt-28 sm:text-3xl">
+              <p className="rise display-type mt-24 max-w-[8em] text-lg leading-tight text-foreground/90 sm:mt-28 sm:text-xl">
                 Identity Verification &
                 <br />
                 Fraud Prevention Writer
