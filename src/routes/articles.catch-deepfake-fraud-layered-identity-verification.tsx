@@ -71,7 +71,7 @@ function ArticlePage() {
       <Nav />
       <main className="pt-28">
         <article className="mx-auto max-w-3xl px-5 py-16 sm:px-8">
-          <p className="eyebrow">Educational Guide · 2026</p>
+          <p className="eyebrow">Product-Focused Blog · 2026</p>
           <h1 className="display-type mt-4 text-4xl leading-tight sm:text-5xl">{TITLE}</h1>
           <p className="mt-4 text-sm text-muted-foreground">
             By Ezekiel Dada — Identity Verification &amp; Fraud Prevention Writer
