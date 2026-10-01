@@ -5,7 +5,7 @@ const work = [
   {
     title: "How Businesses Can Catch Deepfake Fraud Before It Becomes a Bigger Problem",
     outlet: "Self-Published",
-    kind: "Educational Guide",
+    kind: "Product-Focused Blog",
     year: "2026",
     excerpt:
       "Why selfie and liveness checks alone no longer stop deepfakes, and how layered identity verification catches fraud before it grows.",
