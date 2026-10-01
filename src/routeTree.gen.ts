@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorkRouteImport } from './routes/work'
+import { Route as ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRouteImport } from './routes/articles.catch-deepfake-fraud-layered-identity-verification'
 import { Route as ArticlesIsAiGoingToKillSaasRouteImport } from './routes/articles.is-ai-going-to-kill-saas'
 import { Route as ArticlesPigButcheringScamsIdentityVerificationRouteImport } from './routes/articles.pig-butchering-scams-identity-verification'
 
@@ -24,6 +25,12 @@ const WorkRoute = WorkRouteImport.update({
   path: '/work',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRoute =
+  ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRouteImport.update({
+    id: '/articles/catch-deepfake-fraud-layered-identity-verification',
+    path: '/articles/catch-deepfake-fraud-layered-identity-verification',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ArticlesIsAiGoingToKillSaasRoute =
   ArticlesIsAiGoingToKillSaasRouteImport.update({
     id: '/articles/is-ai-going-to-kill-saas',
@@ -40,12 +47,14 @@ const ArticlesPigButcheringScamsIdentityVerificationRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/work': typeof WorkRoute
+  '/articles/catch-deepfake-fraud-layered-identity-verification': typeof ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRoute
   '/articles/is-ai-going-to-kill-saas': typeof ArticlesIsAiGoingToKillSaasRoute
   '/articles/pig-butchering-scams-identity-verification': typeof ArticlesPigButcheringScamsIdentityVerificationRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/work': typeof WorkRoute
+  '/articles/catch-deepfake-fraud-layered-identity-verification': typeof ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRoute
   '/articles/is-ai-going-to-kill-saas': typeof ArticlesIsAiGoingToKillSaasRoute
   '/articles/pig-butchering-scams-identity-verification': typeof ArticlesPigButcheringScamsIdentityVerificationRoute
 }
@@ -53,6 +62,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/work': typeof WorkRoute
+  '/articles/catch-deepfake-fraud-layered-identity-verification': typeof ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRoute
   '/articles/is-ai-going-to-kill-saas': typeof ArticlesIsAiGoingToKillSaasRoute
   '/articles/pig-butchering-scams-identity-verification': typeof ArticlesPigButcheringScamsIdentityVerificationRoute
 }
@@ -61,18 +71,21 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/work'
+    | '/articles/catch-deepfake-fraud-layered-identity-verification'
     | '/articles/is-ai-going-to-kill-saas'
     | '/articles/pig-butchering-scams-identity-verification'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/work'
+    | '/articles/catch-deepfake-fraud-layered-identity-verification'
     | '/articles/is-ai-going-to-kill-saas'
     | '/articles/pig-butchering-scams-identity-verification'
   id:
     | '__root__'
     | '/'
     | '/work'
+    | '/articles/catch-deepfake-fraud-layered-identity-verification'
     | '/articles/is-ai-going-to-kill-saas'
     | '/articles/pig-butchering-scams-identity-verification'
   fileRoutesById: FileRoutesById
@@ -80,6 +93,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   WorkRoute: typeof WorkRoute
+  ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRoute: typeof ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRoute
   ArticlesIsAiGoingToKillSaasRoute: typeof ArticlesIsAiGoingToKillSaasRoute
   ArticlesPigButcheringScamsIdentityVerificationRoute: typeof ArticlesPigButcheringScamsIdentityVerificationRoute
 }
@@ -98,6 +112,13 @@ declare module '@tanstack/react-router' {
       path: '/work'
       fullPath: '/work'
       preLoaderRoute: typeof WorkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/articles/catch-deepfake-fraud-layered-identity-verification': {
+      id: '/articles/catch-deepfake-fraud-layered-identity-verification'
+      path: '/articles/catch-deepfake-fraud-layered-identity-verification'
+      fullPath: '/articles/catch-deepfake-fraud-layered-identity-verification'
+      preLoaderRoute: typeof ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/articles/is-ai-going-to-kill-saas': {
@@ -120,6 +141,8 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   WorkRoute: WorkRoute,
+  ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRoute:
+    ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRoute,
   ArticlesIsAiGoingToKillSaasRoute: ArticlesIsAiGoingToKillSaasRoute,
   ArticlesPigButcheringScamsIdentityVerificationRoute:
     ArticlesPigButcheringScamsIdentityVerificationRoute,
