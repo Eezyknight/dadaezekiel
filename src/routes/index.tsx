@@ -6,17 +6,17 @@ import ezekielPortrait from "@/assets/ezekiel-portrait.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ezekiel Dada — SaaS & Tech Writer" },
+      { title: "Ezekiel Dada — Identity Verification & Fraud Prevention Writer" },
       {
         name: "description",
         content:
-          "SaaS and Tech writer who turns complex ideas into clear, useful content that helps businesses get found, build trust, and convert readers into customers.",
+          "Identity Verification & Fraud Prevention Writer who turns complex topics like deepfakes, KYC, AML, and biometric fraud into clear, credible content businesses can trust.",
       },
-      { property: "og:title", content: "Ezekiel Dada — SaaS & Tech Writer" },
+      { property: "og:title", content: "Ezekiel Dada — Identity Verification & Fraud Prevention Writer" },
       {
         property: "og:description",
         content:
-          "SaaS and Tech writer who turns complex ideas into clear, useful content that helps businesses get found, build trust, and convert readers into customers.",
+          "Identity Verification & Fraud Prevention Writer who turns complex topics like deepfakes, KYC, AML, and biometric fraud into clear, credible content businesses can trust.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -191,7 +191,7 @@ function Index() {
           <figure className="overflow-hidden rounded-2xl border border-border shadow-lift">
             <img
               src={ezekielPortrait}
-              alt="Portrait of Ezekiel Dada, SaaS and Tech writer"
+              alt="Portrait of Ezekiel Dada, identity verification and fraud prevention writer"
               width={768}
               height={919}
               loading="lazy"

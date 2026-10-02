@@ -25,17 +25,17 @@ const work: { title: string; outlet: string; kind: string; year: string; excerpt
 export const Route = createFileRoute("/work")({
   head: () => ({
     meta: [
-      { title: "Ezekiel Dada — SaaS & Tech Writer" },
+      { title: "Ezekiel Dada — Identity Verification & Fraud Prevention Writer" },
       {
         name: "description",
         content:
-          "A collection of SaaS and technology writing by Ezekiel Dada: blogs, long-form articles, website copy, and ghostwriting.",
+          "A collection of identity verification and fraud prevention writing by Ezekiel Dada: blogs, long-form articles, website copy, and ghostwriting.",
       },
       { property: "og:title", content: "Selected Work — Ezekiel Dada" },
       {
         property: "og:description",
         content:
-          "A collection of SaaS and technology writing: blogs, long-form articles, website copy, and ghostwriting.",
+          "A collection of identity verification and fraud prevention writing: blogs, long-form articles, website copy, and ghostwriting.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://dadaezekiel.lovable.app/work" },
