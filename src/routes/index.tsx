@@ -53,7 +53,7 @@ const services = [
   },
 ];
 
-const selectedWork = [
+const selectedWork: { title: string; outlet: string; kind: string; year: string; excerpt: string; to?: string; link?: string }[] = [
   {
     title: "How Businesses Can Catch Deepfake Fraud Before It Becomes a Bigger Problem",
     outlet: "Self-Published",
@@ -159,27 +159,26 @@ function Index() {
           <div>
             <p className="eyebrow">About Me</p>
             <h2 className="display-type mt-4 text-4xl leading-tight sm:text-5xl">
-              SaaS & Tech Writer.
+              Identity & Fraud Prevention Writer.
             </h2>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
-              I specialize in writing identity verification, fraud prevention, and digital trust
-              content, turning complex topics like KYC, AML, account security, and online scams
-              into clear, engaging pieces that people can actually understand and businesses can
-              use to build trust.
+              I write for the companies helping businesses detect fraud, verify identities, and
+              protect people they serve. This includes KYC / KYB / KYA platforms, fraud prevention
+              tools, and the trust & safety teams who never get to relax.
             </p>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
-              With 5+ years of writing experience and a background in content marketing, I create
-              SEO, AEO, and GEO-optimized content designed to help identity and fraud-prevention
-              companies explain their products clearly, answer the questions their customers are
-              asking, and establish authority in a space where trust matters.
+              With 5+ years of experience and a background in SEO, AEO, and GEO content strategy, I
+              turn complex topics like deepfakes, AML, liveness detection, biometric fraud, and
+              layered verification into clear, credible content that people can actually understand
+              without losing the technical detail that matters.
             </p>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
               Whether it’s a thought-leadership article, product-focused blog, case study, website
-              copy, or educational guide, I write with one question in mind:
+              copy, or educational guide, my goal is simple:
             </p>
             <p className="mt-5 max-w-md leading-relaxed text-foreground italic">
-              How can we make a complex problem easier to understand and make the reader trust the
-              solution?
+              Make complex threats simpler to understand and the technology built to stop them
+              easier to trust.
             </p>
             <a
               href="#contact"
