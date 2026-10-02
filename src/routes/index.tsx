@@ -308,10 +308,10 @@ function Index() {
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="mailto:dadaezekiel12@gmail.com"
+              href="mailto:admin@ezekieldada.com"
               className="inline-block rounded-full bg-primary px-8 py-4 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
             >
-              dadaezekiel12@gmail.com
+              admin@ezekieldada.com
             </a>
             <a
               href="https://www.linkedin.com/in/ezekiel-dada"
