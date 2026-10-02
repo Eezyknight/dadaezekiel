@@ -1,24 +1,24 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
 
-const work = [
+const work: { title: string; outlet: string; kind: string; year: string; excerpt: string; to?: string; link?: string }[] = [
   {
-    title: "Best OnlyFans Search Engines in 2026",
+    title: "How Businesses Can Catch Deepfake Fraud Before It Becomes a Bigger Problem",
     outlet: "Self-Published",
-    kind: "Blog",
+    kind: "Product-Focused Blog",
     year: "2026",
     excerpt:
-      "A compared list of the top OnlyFans search engines for finding specific creators — with natural promotion of my client’s brand as the best option.",
-    link: "https://blog.clarityverify.com/onlyfans-search-engines-finders/",
+      "Why selfie and liveness checks alone no longer stop deepfakes, and how layered identity verification catches fraud before it grows.",
+    to: "/articles/catch-deepfake-fraud-layered-identity-verification",
   },
   {
-    title: "Anonsms: How to Send Anonymous SMS Online",
-    outlet: "Company",
-    kind: "Web Copy",
+    title: "Pig Butchering Scams Explained: How Identity Verification Helps",
+    outlet: "Self-Published",
+    kind: "Educational Guide",
     year: "2026",
     excerpt:
-      "Wrote a step-by-step guide on sending anonymous SMS through Anonsms, highlighting its speed, safety, privacy, and delivery success rate.",
-    link: "https://www.anonsms.com/how-to-send-anonymous-sms",
+      "How pig butchering scams work, why deepfakes and AI agents are making them harder to detect, and how layered identity verification helps platforms stop fraud early.",
+    to: "/articles/pig-butchering-scams-identity-verification",
   },
   {
     title: "Is AI going to kill SaaS? The rise of AI software agents",
@@ -29,31 +29,22 @@ const work = [
       "A thought-provoking examination of how AI software agents are challenging traditional SaaS models and redefining what businesses expect from software.",
     to: "/articles/is-ai-going-to-kill-saas",
   },
-  {
-    title: "How to Block Your Number: 5 Easy Ways",
-    outlet: "Confidential",
-    kind: "Ghostwriting",
-    year: "2026",
-    excerpt:
-      "Detailed 1-1 meeting, research, and writing for a founder who’s very busy — but now gets quoted for it.",
-    link: "https://www.anonsms.com/blog/how-to-block-your-number/",
-  },
 ];
 
 export const Route = createFileRoute("/work")({
   head: () => ({
     meta: [
-      { title: "Ezekiel Dada — SaaS & Tech Writer" },
+      { title: "Ezekiel Dada — Identity Verification & Fraud Prevention Writer" },
       {
         name: "description",
         content:
-          "A collection of SaaS and technology writing by Ezekiel Dada: blogs, long-form articles, website copy, and ghostwriting.",
+          "A collection of identity verification and fraud prevention writing by Ezekiel Dada: blogs, long-form articles, website copy, and ghostwriting.",
       },
       { property: "og:title", content: "Selected Work — Ezekiel Dada" },
       {
         property: "og:description",
         content:
-          "A collection of SaaS and technology writing: blogs, long-form articles, website copy, and ghostwriting.",
+          "A collection of identity verification and fraud prevention writing: blogs, long-form articles, website copy, and ghostwriting.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://dadaezekiel.lovable.app/work" },
@@ -141,7 +132,7 @@ function WorkPage() {
 
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-10 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-8">
-          <p>© {new Date().getFullYear()} Ezekiel Dada. All words his own.</p>
+          <p>© {new Date().getFullYear()} Ezekiel Dada. All words my own.</p>
           <nav className="flex gap-6">
             <Link to="/work" className="transition-colors hover:text-foreground">
               Work

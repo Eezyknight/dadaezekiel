@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
@@ -11,11 +11,31 @@ const links = [
 
 export function Nav() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <header className="fixed inset-x-0 top-0 z-50">
-      <nav className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-5 py-5 sm:px-8">
-        <div aria-hidden="true" />
+      <nav
+        className={`mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-5 py-5 transition-[background-color,border-color,box-shadow,backdrop-filter,padding] duration-500 ease-in-out sm:px-8 ${
+          scrolled
+            ? "border-b border-border bg-background/70 shadow-lift backdrop-blur-xl backdrop-saturate-150 sm:py-3.5"
+            : "border-b border-transparent bg-transparent sm:py-5"
+        }`}
+      >
+        <Link
+          to="/"
+          className="justify-self-start display-type text-lg leading-none tracking-tight text-foreground transition-colors hover:text-accent sm:text-xl"
+        >
+          <span className="italic">Ezekiel</span>{" "}
+          <span className="font-semibold tracking-[-0.02em]">Dada</span>
+        </Link>
 
         <div className="flex items-center gap-1.5">
           <div className="hidden items-center gap-1 rounded-full bg-secondary/60 p-1 backdrop-blur sm:flex">

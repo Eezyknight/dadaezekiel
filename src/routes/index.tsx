@@ -6,17 +6,17 @@ import ezekielPortrait from "@/assets/ezekiel-portrait.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ezekiel Dada — SaaS & Tech Writer" },
+      { title: "Ezekiel Dada — Identity Verification & Fraud Prevention Writer" },
       {
         name: "description",
         content:
-          "SaaS and Tech writer who turns complex ideas into clear, useful content that helps businesses get found, build trust, and convert readers into customers.",
+          "Identity Verification & Fraud Prevention Writer who turns complex topics like deepfakes, KYC, AML, and biometric fraud into clear, credible content businesses can trust.",
       },
-      { property: "og:title", content: "Ezekiel Dada — SaaS & Tech Writer" },
+      { property: "og:title", content: "Ezekiel Dada — Identity Verification & Fraud Prevention Writer" },
       {
         property: "og:description",
         content:
-          "SaaS and Tech writer who turns complex ideas into clear, useful content that helps businesses get found, build trust, and convert readers into customers.",
+          "Identity Verification & Fraud Prevention Writer who turns complex topics like deepfakes, KYC, AML, and biometric fraud into clear, credible content businesses can trust.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -32,95 +32,55 @@ const stats = [
 
 const services = [
   {
-    title: "Blogs & Long-Form Articles",
-    copy: "Research-driven SaaS and Tech content that informs, ranks, and builds authority.",
+    title: "Thought Leadership Articles",
+    copy: "Expert-driven insights on identity, fraud, and digital trust that help brands lead important industry conversations.",
+  },
+  {
+    title: "Product-focused Blogs",
+    copy: "Research-driven content that explains identity verification and fraud prevention products, use cases, and technologies in clear, practical terms.",
+  },
+  {
+    title: "Case Studies",
+    copy: "Real customer stories that show how identity and fraud solutions solve problems, reduce risk, and create measurable business value.",
   },
   {
     title: "Website & Brand Copy",
-    copy: "Clear, persuasive copy that communicates your product, value, and positioning.",
+    copy: "Clear, persuasive copy that communicates your product, strengthens trust, and makes complex identity and fraud solutions easier to understand.",
   },
   {
-    title: "Thought Leadership",
-    copy: "Insightful perspectives that shape conversations and build authority.",
-  },
-  {
-    title: "Ghostwriting",
-    copy: "Thoughtful content written in your voice — without me taking the spotlight.",
+    title: "Educational Guides",
+    copy: "In-depth resources that simplify complex topics in identity verification, fraud prevention, KYC, AML, and digital security.",
   },
 ];
 
-const work = [
+const selectedWork: { title: string; outlet: string; kind: string; year: string; excerpt: string; to?: string; link?: string }[] = [
   {
-    title: "Best OnlyFans Search Engines in 2026",
+    title: "How Businesses Can Catch Deepfake Fraud Before It Becomes a Bigger Problem",
     outlet: "Self-Published",
-    kind: "Blog",
+    kind: "Product-Focused Blog",
     year: "2026",
     excerpt:
-      "A compared list of the top OnlyFans search engines for finding specific creators — with natural promotion of my client’s brand as the best option.",
-    link: "https://blog.clarityverify.com/onlyfans-search-engines-finders/",
+      "Why selfie and liveness checks alone no longer stop deepfakes, and how layered identity verification catches fraud before it grows.",
+    to: "/articles/catch-deepfake-fraud-layered-identity-verification",
   },
   {
-    title: "Anonsms: How to Send Anonymous SMS Online",
-    outlet: "Company",
-    kind: "Web Copy",
-    year: "2026",
-    excerpt:
-      "Wrote a step-by-step guide on sending anonymous SMS through Anonsms, highlighting its speed, safety, privacy, and delivery success rate.",
-    link: "https://www.anonsms.com/how-to-send-anonymous-sms",
-  },
-  {
-    title: "Is AI Going to Kill SaaS? The Rise of AI Software Agents",
+    title: "Pig Butchering Scams Explained: How Identity Verification Helps",
     outlet: "Self-Published",
-    kind: "Thought Leadership",
+    kind: "Educational Guide",
     year: "2026",
     excerpt:
-      "A thought-provoking examination of how AI software agents are challenging traditional SaaS models and redefining what businesses expect from software.",
-    to: "/articles/is-ai-going-to-kill-saas",
-  },
-  {
-    title: "How to Block Your Number: 5 Easy Ways",
-    outlet: "Confidential",
-    kind: "Ghostwriting",
-    year: "2026",
-    excerpt:
-      "Detailed 1-1 meeting, research, and writing for a founder who’s very busy — but now gets quoted for it.",
-    link: "https://www.anonsms.com/blog/how-to-block-your-number/",
+      "How pig butchering scams work, why deepfakes and AI agents are making them harder to detect, and how layered identity verification helps platforms stop fraud early.",
+    to: "/articles/pig-butchering-scams-identity-verification",
   },
 ];
 
-const marquee = [
-  "ClarityVerify",
-  "Anonsms",
-  "NotifyPartners",
-  "AiPPT",
-  "Gleepackaging",
-  "Clingold",
-  "Kesheen",
-  "Nendine",
-  "Tulipiece",
-  "Zearrow",
-];
 
-const testimonials = [
-  {
-    quote:
-      "Exceptional writer who understands complex topics and turns them into clear, engaging, and search-focused content.",
-    name: "ClarityVerify",
-    role: "",
-  },
-  {
-    quote:
-      "Ezekiel hit the pinnacle with the set of copies he wrote for our website. He’s the best of the best.",
-    name: "Anonsms",
-    role: "",
-  },
-  {
-    quote:
-      "He could relay our SaaS product with any topic and make us stand out. I didn’t have to go back-and-forth with him.",
-    name: "",
-    role: "Lead Editor: AiPPT",
-  },
-];
+
+
+
+
+
+
 
 
 function Index() {
@@ -148,10 +108,10 @@ function Index() {
               left gutter, so it can never drift into the nav on short viewports. */}
           <div className="absolute inset-x-0 top-0">
             <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
-              <p className="rise display-type mt-24 max-w-[8em] text-2xl leading-tight text-foreground/90 sm:mt-28 sm:text-3xl">
-                SaaS & Tech
+              <p className="rise display-type mt-24 max-w-[8em] text-lg leading-tight text-foreground/90 sm:mt-28 sm:text-xl">
+                Identity Verification &
                 <br />
-                Content Writer
+                Fraud Prevention Writer
               </p>
             </div>
           </div>
@@ -193,34 +153,32 @@ function Index() {
       </section>
 
 
-      {/* Marquee of bylines */}
-      <section aria-label="Published in" className="overflow-hidden border-y border-border py-6">
-        <div className="marquee-track flex w-max items-center gap-12 whitespace-nowrap">
-          {[...marquee, ...marquee].map((m, i) => (
-            <span key={i} className="display-type text-xl text-muted-foreground">
-              {m}
-            </span>
-          ))}
-        </div>
-      </section>
-
       {/* Featured / the writer's cut */}
       <section id="about" className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center">
           <div>
             <p className="eyebrow">About Me</p>
             <h2 className="display-type mt-4 text-4xl leading-tight sm:text-5xl">
-              SaaS & Tech Writer.
+              Identity & Fraud Prevention Writer.
             </h2>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
-              I'm a SaaS and Tech writer who turns complex ideas into clear, useful content that
-              helps businesses get found, build trust, and convert readers into customers.
+              I write for the companies helping businesses detect fraud, verify identities, and
+              protect people they serve. This includes KYC / KYB / KYA platforms, fraud prevention
+              tools, and the trust & safety teams who never get to relax.
             </p>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
-              I started writing professionally over five years ago, working across several
-              industries and learning what makes content more than just words on a page. Today, I
-              focus exclusively on SaaS and technology companies, creating blog content and website
-              copy built around a clear understanding of the audience.
+              With 5+ years of experience and a background in SEO, AEO, and GEO content strategy, I
+              turn complex topics like deepfakes, AML, liveness detection, biometric fraud, and
+              layered verification into clear, credible content that people can actually understand
+              without losing the technical detail that matters.
+            </p>
+            <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
+              Whether it’s a thought-leadership article, product-focused blog, case study, website
+              copy, or educational guide, my goal is simple:
+            </p>
+            <p className="mt-5 max-w-md leading-relaxed text-foreground italic">
+              Make complex threats simpler to understand and the technology built to stop them
+              easier to trust.
             </p>
             <a
               href="#contact"
@@ -233,7 +191,7 @@ function Index() {
           <figure className="overflow-hidden rounded-2xl border border-border shadow-lift">
             <img
               src={ezekielPortrait}
-              alt="Portrait of Ezekiel Dada, SaaS and Tech writer"
+              alt="Portrait of Ezekiel Dada, identity verification and fraud prevention writer"
               width={768}
               height={919}
               loading="lazy"
@@ -254,7 +212,7 @@ function Index() {
             {"\n"}
           </p>
 
-          <div className="mt-14 grid gap-5 md:grid-cols-4">
+          <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
             {services.map((s, i) => (
               <article
                 key={s.title}
@@ -271,16 +229,16 @@ function Index() {
         </div>
       </section>
 
-      {/* Work */}
+      {/* Selected Work */}
       <section id="work" className="border-t border-border">
         <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
           <p className="eyebrow">Selected Work</p>
-          <h2 className="display-type mt-4 text-4xl leading-tight sm:text-5xl">
+          <h2 className="display-type mt-4 max-w-2xl text-4xl leading-tight sm:text-5xl">
             Pieces worth your time.
           </h2>
 
           <ul className="mt-14 divide-y divide-border border-y border-border">
-            {work.map((w) => {
+            {selectedWork.map((w) => {
               const cardClass =
                 "group grid gap-4 py-8 transition-colors hover:bg-secondary/40 sm:grid-cols-[auto_1fr] sm:gap-10 sm:px-2";
               const inner = (
@@ -301,58 +259,37 @@ function Index() {
                   </div>
                 </>
               );
-              return (
-                <li key={w.title}>
-                  {"to" in w && w.to ? (
+              if ("to" in w && w.to) {
+                return (
+                  <li key={w.title}>
                     <Link to={w.to} className={cardClass}>
                       {inner}
                     </Link>
-                  ) : (
-                    <a
-                      href={w.link || "#contact"}
-                      target={w.link ? "_blank" : undefined}
-                      rel={w.link ? "noopener noreferrer" : undefined}
-                      className={cardClass}
-                    >
+                  </li>
+                );
+              }
+              return (
+                <li key={w.title}>
+                  {w.link ? (
+                    <a href={w.link} target="_blank" rel="noopener noreferrer" className={cardClass}>
                       {inner}
                     </a>
+                  ) : (
+                    <div className={cardClass}>{inner}</div>
                   )}
                 </li>
               );
             })}
-      </ul>
+          </ul>
 
-      <div className="mt-12 text-center">
-        <Link
-          to="/work"
-          className="inline-flex items-center gap-2 rounded-full border border-accent px-6 py-3 text-sm font-medium text-accent transition-colors hover:bg-accent hover:text-accent-foreground"
-        >
-          More
-          <span aria-hidden>→</span>
-        </Link>
-      </div>
-    </div>
-  </section>
-
-      {/* Testimonials */}
-      <section className="border-t border-border">
-        <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
-          <p className="eyebrow">FEEDBACK</p>
-          <div className="mt-12 grid gap-5 md:grid-cols-3">
-            {testimonials.map((t, i) => (
-              <blockquote key={i} className="rounded-2xl border border-border bg-card p-8">
-                <p className="display-type text-2xl leading-snug">“{t.quote}”</p>
-                <footer className="mt-6 text-sm text-muted-foreground">
-                  {t.name ? (
-                    <>
-                      &nbsp;—&nbsp;<span className="text-foreground">{t.name}</span>{t.role && ` — ${t.role}`}
-                    </>
-                  ) : (
-                    <>&nbsp;—&nbsp;{t.role}</>
-                  )}
-                </footer>
-              </blockquote>
-            ))}
+          <div className="mt-14 flex justify-center">
+            <Link
+              to="/work"
+              className="inline-flex items-center gap-2 rounded-full border border-accent px-6 py-3 text-sm font-medium text-accent transition-colors hover:bg-accent hover:text-accent-foreground"
+            >
+              More
+              <span aria-hidden>→</span>
+            </Link>
           </div>
         </div>
       </section>
@@ -360,7 +297,7 @@ function Index() {
       {/* Contact */}
       <section id="contact" className="border-t border-border bg-spot">
         <div className="mx-auto max-w-3xl px-5 py-28 text-center sm:px-8">
-          <p className="eyebrow">Next Draft</p>
+          <p className="eyebrow">Have a piece you need written?</p>
           <h2 className="display-type mt-5 text-4xl leading-tight sm:text-6xl">
             Reach me on
             <br />
@@ -371,10 +308,10 @@ function Index() {
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="mailto:dadaezekiel12@gmail.com"
+              href="mailto:admin@ezekieldada.com"
               className="inline-block rounded-full bg-primary px-8 py-4 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
             >
-              dadaezekiel12@gmail.com
+              admin@ezekieldada.com
             </a>
             <a
               href="https://www.linkedin.com/in/ezekiel-dada"
@@ -390,7 +327,7 @@ function Index() {
 
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-10 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-8">
-          <p>© {new Date().getFullYear()} Ezekiel Dada. All words his own.</p>
+          <p>© {new Date().getFullYear()} Ezekiel Dada. All words my own.</p>
           <nav className="flex gap-6">
             <Link to="/work" className="transition-colors hover:text-foreground">
               Work
