@@ -20,6 +20,15 @@ const work: { title: string; outlet: string; kind: string; year: string; excerpt
       "How pig butchering scams work, why deepfakes and AI agents are making them harder to detect, and how layered identity verification helps platforms stop fraud early.",
     to: "/articles/pig-butchering-scams-identity-verification",
   },
+  {
+    title: "Is AI going to kill SaaS? The rise of AI software agents",
+    outlet: "Self-Published",
+    kind: "Thought Leadership",
+    year: "2026",
+    excerpt:
+      "A thought-provoking examination of how AI software agents are challenging traditional SaaS models and redefining what businesses expect from software.",
+    to: "/articles/is-ai-going-to-kill-saas",
+  },
 ];
 
 export const Route = createFileRoute("/work")({
