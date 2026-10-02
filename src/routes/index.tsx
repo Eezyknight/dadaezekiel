@@ -297,7 +297,7 @@ function Index() {
       {/* Contact */}
       <section id="contact" className="border-t border-border bg-spot">
         <div className="mx-auto max-w-3xl px-5 py-28 text-center sm:px-8">
-          <p className="eyebrow">Next Draft</p>
+          <p className="eyebrow">Have a piece you need written?</p>
           <h2 className="display-type mt-5 text-4xl leading-tight sm:text-6xl">
             Reach me on
             <br />
@@ -327,7 +327,7 @@ function Index() {
 
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-10 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-8">
-          <p>© {new Date().getFullYear()} Ezekiel Dada. All words his own.</p>
+          <p>© {new Date().getFullYear()} Ezekiel Dada. All words my own.</p>
           <nav className="flex gap-6">
             <Link to="/work" className="transition-colors hover:text-foreground">
               Work
