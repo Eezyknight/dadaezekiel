@@ -55,6 +55,15 @@ const services = [
 
 const selectedWork: { title: string; outlet: string; kind: string; year: string; excerpt: string; to?: string; link?: string }[] = [
   {
+    title: "Identity Verification Was Built for Humans. Agentic Commerce Changes the Equation",
+    outlet: "Self-Published",
+    kind: "Thought Leadership",
+    year: "2026",
+    excerpt:
+      "AI shopping agents now transact on behalf of humans. Why traditional identity verification falls short, and how Know Your Agent (KYA) can close the gap.",
+    to: "/articles/know-your-agent-agentic-commerce",
+  },
+  {
     title: "How Businesses Can Catch Deepfake Fraud Before It Becomes a Bigger Problem",
     outlet: "Self-Published",
     kind: "Product-Focused Blog",
