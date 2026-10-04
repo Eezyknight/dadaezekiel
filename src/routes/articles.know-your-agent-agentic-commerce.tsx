@@ -239,12 +239,12 @@ function ArticlePage() {
             </p>
             <p>
               The evidence can become critical for{" "}
-              <Link
-                to="/articles/pig-butchering-scams-identity-verification"
+              <a
+                href="https://ezekieldada.com/articles/pig-butchering-scams-identity-verification"
                 className="underline decoration-border underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
               >
                 pig butchering scam
-              </Link>{" "}
+              </a>{" "}
               investigations, disputes, compliance reviews, and other fraud activities.
             </p>
 
