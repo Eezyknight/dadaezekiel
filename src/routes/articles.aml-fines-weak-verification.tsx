@@ -245,9 +245,9 @@ function ArticlePage() {
             <p>
               A financial institution needs an established onboarding system to verify that a customer is who they
               claim to be. Also, there should be systems that{" "}
-              <Link to="/articles/catch-deepfake-fraud-layered-identity-verification" className={linkCls}>
+              <a href="https://ezekieldada.com/articles/catch-deepfake-fraud-layered-identity-verification" className={linkCls}>
                 catch deepfake fraud before it becomes a bigger problem
-              </Link>
+              </a>
               .
             </p>
             <p>These controls matter because fraudsters can manipulate individual elements of an identity.</p>
