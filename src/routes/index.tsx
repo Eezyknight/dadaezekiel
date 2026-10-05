@@ -55,6 +55,24 @@ const services = [
 
 const selectedWork: { title: string; outlet: string; kind: string; year: string; excerpt: string; to?: string; link?: string }[] = [
   {
+    title: "Billions in AML Fines: What 2025-2026 Enforcement Actions Reveal About Weak Verification",
+    outlet: "Self-Published",
+    kind: "Case Study",
+    year: "2026",
+    excerpt:
+      "Four AML enforcement cases from UBS, Canaccord Genuity, UBS Financial Services, and OKX — what each failed to detect and what could have been done differently.",
+    to: "/articles/aml-fines-weak-verification",
+  },
+  {
+    title: "Identity Verification Was Built for Humans. Agentic Commerce Changes the Equation",
+    outlet: "Self-Published",
+    kind: "Thought Leadership",
+    year: "2026",
+    excerpt:
+      "AI shopping agents now transact on behalf of humans. Why traditional identity verification falls short, and how Know Your Agent (KYA) can close the gap.",
+    to: "/articles/know-your-agent-agentic-commerce",
+  },
+  {
     title: "How Businesses Can Catch Deepfake Fraud Before It Becomes a Bigger Problem",
     outlet: "Self-Published",
     kind: "Product-Focused Blog",
