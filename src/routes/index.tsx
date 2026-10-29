@@ -126,10 +126,8 @@ function Index() {
               left gutter, so it can never drift into the nav on short viewports. */}
           <div className="absolute inset-x-0 top-0">
             <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
-              <p className="rise display-type mt-24 max-w-[8em] text-lg leading-tight text-foreground/90 sm:mt-28 sm:text-xl">
-                SaaS, AI &
-                <br />
-                Cybersecurity Writer
+              <p className="rise display-type mt-24 text-lg leading-tight text-foreground/90 sm:mt-28 sm:text-xl">
+                SaaS, AI & Cybersecurity Writer
               </p>
             </div>
           </div>
@@ -177,7 +175,7 @@ function Index() {
           <div>
             <p className="eyebrow">About Me</p>
             <h2 className="display-type mt-4 text-4xl leading-tight sm:text-5xl">
-              Identity & Fraud Prevention Writer.
+              SaaS, AI & Cybersecurity Writer.
             </h2>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
               I write for the companies building the software, AI, and security products individuals
