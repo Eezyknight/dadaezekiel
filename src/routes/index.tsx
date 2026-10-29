@@ -33,23 +33,23 @@ const stats = [
 const services = [
   {
     title: "Thought Leadership Articles",
-    copy: "Expert-driven insights on identity, fraud, and digital trust that help brands lead important industry conversations.",
+    copy: "Expert-driven insights on SaaS, AI, and cybersecurity that help brands lead important industry conversations.",
   },
   {
-    title: "Product-focused Blogs",
-    copy: "Research-driven content that explains identity verification and fraud prevention products, use cases, and technologies in clear, practical terms.",
+    title: "Product-Focused Blogs",
+    copy: "Research-driven content that explains your product, use cases, and underlying technology in clear, practical terms.",
   },
   {
     title: "Case Studies",
-    copy: "Real customer stories that show how identity and fraud solutions solve problems, reduce risk, and create measurable business value.",
+    copy: "Real customer stories that show how your solution solves problems, reduces risk, and creates measurable business value.",
   },
   {
     title: "Website & Brand Copy",
-    copy: "Clear, persuasive copy that communicates your product, strengthens trust, and makes complex identity and fraud solutions easier to understand.",
+    copy: "Clear, persuasive copy that communicates your product, strengthens trust, and makes complex technology easier to understand.",
   },
   {
     title: "Educational Guides",
-    copy: "In-depth resources that simplify complex topics in identity verification, fraud prevention, KYC, AML, and digital security.",
+    copy: "In-depth resources that simplify complex topics across SaaS, AI, cybersecurity, identity verification, and digital trust.",
   },
 ];
 
@@ -127,9 +127,9 @@ function Index() {
           <div className="absolute inset-x-0 top-0">
             <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
               <p className="rise display-type mt-24 max-w-[8em] text-lg leading-tight text-foreground/90 sm:mt-28 sm:text-xl">
-                Identity Verification &
+                SaaS, AI &
                 <br />
-                Fraud Prevention Writer
+                Cybersecurity Writer
               </p>
             </div>
           </div>
@@ -180,15 +180,9 @@ function Index() {
               Identity & Fraud Prevention Writer.
             </h2>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
-              I write for the companies helping businesses detect fraud, verify identities, and
-              protect people they serve. This includes KYC / KYB / KYA platforms, fraud prevention
-              tools, and the trust & safety teams who never get to relax.
-            </p>
-            <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
-              With 5+ years of experience and a background in SEO, AEO, and GEO content strategy, I
-              turn complex topics like deepfakes, AML, liveness detection, biometric fraud, and
-              layered verification into clear, credible content that people can actually understand
-              without losing the technical detail that matters.
+              I write for the companies building the software, AI, and security products individuals
+              & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity
+              solutions.
             </p>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
               Whether it’s a thought-leadership article, product-focused blog, case study, website
