@@ -6,13 +6,13 @@ import ezekielPortrait from "@/assets/ezekiel-portrait.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ezekiel Dada — Identity Verification & Fraud Prevention Writer" },
+      { title: "Ezekiel Dada — SaaS, AI & Cybersecurity Writer" },
       {
         name: "description",
         content:
           "Identity Verification & Fraud Prevention Writer who turns complex topics like deepfakes, KYC, AML, and biometric fraud into clear, credible content businesses can trust.",
       },
-      { property: "og:title", content: "Ezekiel Dada — Identity Verification & Fraud Prevention Writer" },
+      { property: "og:title", content: "Ezekiel Dada — SaaS, AI & Cybersecurity Writer" },
       {
         property: "og:description",
         content:
