@@ -70,7 +70,7 @@ const work: { title: string; outlet: string; kind: string; year: string; excerpt
 export const Route = createFileRoute("/work")({
   head: () => ({
     meta: [
-      { title: "Ezekiel Dada — Identity Verification & Fraud Prevention Writer" },
+      { title: "Ezekiel Dada — SaaS, AI & Cybersecurity Writer" },
       {
         name: "description",
         content:
