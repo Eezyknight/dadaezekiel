@@ -10,13 +10,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Identity Verification & Fraud Prevention Writer who turns complex topics like deepfakes, KYC, AML, and biometric fraud into clear, credible content businesses can trust.",
+          "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
       },
       { property: "og:title", content: "Ezekiel Dada — SaaS, AI & Cybersecurity Writer" },
       {
         property: "og:description",
         content:
-          "Identity Verification & Fraud Prevention Writer who turns complex topics like deepfakes, KYC, AML, and biometric fraud into clear, credible content businesses can trust.",
+          "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
