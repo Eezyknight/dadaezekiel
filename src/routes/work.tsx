@@ -74,13 +74,13 @@ export const Route = createFileRoute("/work")({
       {
         name: "description",
         content:
-          "A collection of identity verification and fraud prevention writing by Ezekiel Dada: blogs, long-form articles, website copy, and ghostwriting.",
+          "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
       },
       { property: "og:title", content: "Selected Work — Ezekiel Dada" },
       {
         property: "og:description",
         content:
-          "A collection of identity verification and fraud prevention writing: blogs, long-form articles, website copy, and ghostwriting.",
+          "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://dadaezekiel.lovable.app/work" },
