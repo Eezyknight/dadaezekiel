@@ -6,17 +6,17 @@ import ezekielPortrait from "@/assets/ezekiel-portrait.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ezekiel Dada — Identity Verification & Fraud Prevention Writer" },
+      { title: "Ezekiel Dada — SaaS, AI & Cybersecurity Writer" },
       {
         name: "description",
         content:
-          "Identity Verification & Fraud Prevention Writer who turns complex topics like deepfakes, KYC, AML, and biometric fraud into clear, credible content businesses can trust.",
+          "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
       },
-      { property: "og:title", content: "Ezekiel Dada — Identity Verification & Fraud Prevention Writer" },
+      { property: "og:title", content: "Ezekiel Dada — SaaS, AI & Cybersecurity Writer" },
       {
         property: "og:description",
         content:
-          "Identity Verification & Fraud Prevention Writer who turns complex topics like deepfakes, KYC, AML, and biometric fraud into clear, credible content businesses can trust.",
+          "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -33,23 +33,23 @@ const stats = [
 const services = [
   {
     title: "Thought Leadership Articles",
-    copy: "Expert-driven insights on identity, fraud, and digital trust that help brands lead important industry conversations.",
+    copy: "Expert-driven insights on SaaS, AI, and cybersecurity that help brands lead important industry conversations.",
   },
   {
-    title: "Product-focused Blogs",
-    copy: "Research-driven content that explains identity verification and fraud prevention products, use cases, and technologies in clear, practical terms.",
+    title: "Product-Focused Blogs",
+    copy: "Research-driven content that explains your product, use cases, and underlying technology in clear, practical terms.",
   },
   {
     title: "Case Studies",
-    copy: "Real customer stories that show how identity and fraud solutions solve problems, reduce risk, and create measurable business value.",
+    copy: "Real customer stories that show how your solution solves problems, reduces risk, and creates measurable business value.",
   },
   {
     title: "Website & Brand Copy",
-    copy: "Clear, persuasive copy that communicates your product, strengthens trust, and makes complex identity and fraud solutions easier to understand.",
+    copy: "Clear, persuasive copy that communicates your product, strengthens trust, and makes complex technology easier to understand.",
   },
   {
     title: "Educational Guides",
-    copy: "In-depth resources that simplify complex topics in identity verification, fraud prevention, KYC, AML, and digital security.",
+    copy: "In-depth resources that simplify complex topics across SaaS, AI, cybersecurity, identity verification, and digital trust.",
   },
 ];
 
@@ -62,6 +62,33 @@ const selectedWork: { title: string; outlet: string; kind: string; year: string;
     excerpt:
       "Four AML enforcement cases from UBS, Canaccord Genuity, UBS Financial Services, and OKX — what each failed to detect and what could have been done differently.",
     to: "/articles/aml-fines-weak-verification",
+  },
+  {
+    title: "Is AI Going to Kill SaaS? The Rise of AI Software Agents",
+    outlet: "Self-Published",
+    kind: "Thought Leadership",
+    year: "2026",
+    excerpt:
+      "A thought-provoking examination of how AI software agents are challenging traditional SaaS models and redefining what businesses expect from software.",
+    to: "/articles/is-ai-going-to-kill-saas",
+  },
+  {
+    title: "Best OnlyFans Search Engines & Finders in 2026: Which Tools Actually Work",
+    outlet: "ClarityVerify",
+    kind: "Product-Focused Blog",
+    year: "2026",
+    excerpt:
+      "OnlyFans has no built-in search, so finding a specific creator is harder than it should be. A hands-on look at the third-party finder tools that actually work in 2026.",
+    link: "https://blog.clarityverify.com/onlyfans-search-engines-finders/",
+  },
+  {
+    title: "Reverse Email Lookup",
+    outlet: "ClarityVerify",
+    kind: "Website & Brand Copy",
+    year: "2026",
+    excerpt:
+      "Search an email address to uncover the names, phone numbers, and other information connected to it — and get a clearer picture of who you're dealing with online.",
+    link: "https://www.clarityverify.com/reverse-email-lookup",
   },
   {
     title: "Identity Verification Was Built for Humans. Agentic Commerce Changes the Equation",
@@ -126,10 +153,8 @@ function Index() {
               left gutter, so it can never drift into the nav on short viewports. */}
           <div className="absolute inset-x-0 top-0">
             <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
-              <p className="rise display-type mt-24 max-w-[8em] text-lg leading-tight text-foreground/90 sm:mt-28 sm:text-xl">
-                Identity Verification &
-                <br />
-                Fraud Prevention Writer
+              <p className="rise display-type mt-24 text-lg leading-tight text-foreground/90 sm:mt-28 sm:text-xl">
+                SaaS, AI & Cybersecurity Writer
               </p>
             </div>
           </div>
@@ -177,18 +202,12 @@ function Index() {
           <div>
             <p className="eyebrow">About Me</p>
             <h2 className="display-type mt-4 text-4xl leading-tight sm:text-5xl">
-              Identity & Fraud Prevention Writer.
+              SaaS, AI & Cybersecurity Writer.
             </h2>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
-              I write for the companies helping businesses detect fraud, verify identities, and
-              protect people they serve. This includes KYC / KYB / KYA platforms, fraud prevention
-              tools, and the trust & safety teams who never get to relax.
-            </p>
-            <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
-              With 5+ years of experience and a background in SEO, AEO, and GEO content strategy, I
-              turn complex topics like deepfakes, AML, liveness detection, biometric fraud, and
-              layered verification into clear, credible content that people can actually understand
-              without losing the technical detail that matters.
+              I write for the companies building the software, AI, and security products individuals
+              & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity
+              solutions.
             </p>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
               Whether it’s a thought-leadership article, product-focused blog, case study, website

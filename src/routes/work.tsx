@@ -12,6 +12,33 @@ const work: { title: string; outlet: string; kind: string; year: string; excerpt
     to: "/articles/aml-fines-weak-verification",
   },
   {
+    title: "Is AI going to kill SaaS? The rise of AI software agents",
+    outlet: "Self-Published",
+    kind: "Thought Leadership",
+    year: "2026",
+    excerpt:
+      "A thought-provoking examination of how AI software agents are challenging traditional SaaS models and redefining what businesses expect from software.",
+    to: "/articles/is-ai-going-to-kill-saas",
+  },
+  {
+    title: "Best OnlyFans Search Engines & Finders in 2026: Which Tools Actually Work",
+    outlet: "ClarityVerify",
+    kind: "Product-Focused Blog",
+    year: "2026",
+    excerpt:
+      "OnlyFans has no built-in search, so finding a specific creator is harder than it should be. A hands-on look at the third-party finder tools that actually work in 2026.",
+    link: "https://blog.clarityverify.com/onlyfans-search-engines-finders/",
+  },
+  {
+    title: "Reverse Email Lookup",
+    outlet: "ClarityVerify",
+    kind: "Website & Brand Copy",
+    year: "2026",
+    excerpt:
+      "Search an email address to uncover the names, phone numbers, and other information connected to it — and get a clearer picture of who you're dealing with online.",
+    link: "https://www.clarityverify.com/reverse-email-lookup",
+  },
+  {
     title: "Identity Verification Was Built for Humans. Agentic Commerce Changes the Equation",
     outlet: "Self-Published",
     kind: "Thought Leadership",
@@ -38,31 +65,22 @@ const work: { title: string; outlet: string; kind: string; year: string; excerpt
       "How pig butchering scams work, why deepfakes and AI agents are making them harder to detect, and how layered identity verification helps platforms stop fraud early.",
     to: "/articles/pig-butchering-scams-identity-verification",
   },
-  {
-    title: "Is AI going to kill SaaS? The rise of AI software agents",
-    outlet: "Self-Published",
-    kind: "Thought Leadership",
-    year: "2026",
-    excerpt:
-      "A thought-provoking examination of how AI software agents are challenging traditional SaaS models and redefining what businesses expect from software.",
-    to: "/articles/is-ai-going-to-kill-saas",
-  },
 ];
 
 export const Route = createFileRoute("/work")({
   head: () => ({
     meta: [
-      { title: "Ezekiel Dada — Identity Verification & Fraud Prevention Writer" },
+      { title: "Ezekiel Dada — SaaS, AI & Cybersecurity Writer" },
       {
         name: "description",
         content:
-          "A collection of identity verification and fraud prevention writing by Ezekiel Dada: blogs, long-form articles, website copy, and ghostwriting.",
+          "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
       },
       { property: "og:title", content: "Selected Work — Ezekiel Dada" },
       {
         property: "og:description",
         content:
-          "A collection of identity verification and fraud prevention writing: blogs, long-form articles, website copy, and ghostwriting.",
+          "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://dadaezekiel.lovable.app/work" },

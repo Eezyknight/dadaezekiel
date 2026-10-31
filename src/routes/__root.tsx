@@ -78,17 +78,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Ezekiel Dada — Identity Verification & Fraud Prevention Writer" },
+      { title: "Ezekiel Dada — SaaS, AI & Cybersecurity Writer" },
       {
         name: "description",
         content:
-          "Identity Verification & Fraud Prevention Writer who turns complex topics like deepfakes, KYC, AML, and biometric fraud into clear, credible content businesses can trust.",
+          "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
       },
       { name: "author", content: "Ezekiel Dada" },
-      { property: "og:title", content: "Ezekiel Dada — Identity Verification & Fraud Prevention Writer" },
+      { property: "og:title", content: "Ezekiel Dada — SaaS, AI & Cybersecurity Writer" },
       {
         property: "og:description",
-        content: "Identity Verification & Fraud Prevention Writer who turns complex topics like deepfakes, KYC, AML, and biometric fraud into clear, credible content businesses can trust.",
+        content: "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
