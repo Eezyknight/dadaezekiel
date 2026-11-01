@@ -206,7 +206,7 @@ function Index() {
             </h2>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
               I write for the companies building the software and security products individuals
-              & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity
+              & businesses depend on. That includes SaaS platforms and cybersecurity
               solutions.
             </p>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
