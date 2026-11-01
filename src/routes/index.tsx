@@ -6,13 +6,13 @@ import ezekielPortrait from "@/assets/ezekiel-portrait.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ezekiel Dada — SaaS, AI & Cybersecurity Writer" },
+      { title: "Ezekiel Dada — SaaS & Cybersecurity Writer" },
       {
         name: "description",
         content:
           "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
       },
-      { property: "og:title", content: "Ezekiel Dada — SaaS, AI & Cybersecurity Writer" },
+      { property: "og:title", content: "Ezekiel Dada — SaaS & Cybersecurity Writer" },
       {
         property: "og:description",
         content:
@@ -154,7 +154,7 @@ function Index() {
           <div className="absolute inset-x-0 top-0">
             <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
               <p className="rise display-type mt-24 text-lg leading-tight text-foreground/90 sm:mt-28 sm:text-xl">
-                SaaS, AI & Cybersecurity Writer
+                SaaS & Cybersecurity Writer
               </p>
             </div>
           </div>
@@ -202,7 +202,7 @@ function Index() {
           <div>
             <p className="eyebrow">About Me</p>
             <h2 className="display-type mt-4 text-4xl leading-tight sm:text-5xl">
-              SaaS, AI & Cybersecurity Writer.
+              SaaS & Cybersecurity Writer.
             </h2>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
               I write for the companies building the software, AI, and security products individuals
