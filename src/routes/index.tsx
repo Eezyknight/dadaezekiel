@@ -214,8 +214,7 @@ function Index() {
               copy, or educational guide, my goal is simple:
             </p>
             <p className="mt-5 max-w-md leading-relaxed text-foreground italic">
-              Make complex threats simpler to understand and the technology built to stop them
-              easier to trust.
+              Make complex topics simpler to understand and the solution easier to trust.
             </p>
             <a
               href="#contact"
