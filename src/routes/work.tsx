@@ -70,17 +70,17 @@ const work: { title: string; outlet: string; kind: string; year: string; excerpt
 export const Route = createFileRoute("/work")({
   head: () => ({
     meta: [
-      { title: "Ezekiel Dada — SaaS, AI & Cybersecurity Writer" },
+      { title: "Ezekiel Dada — SaaS & Cybersecurity Writer" },
       {
         name: "description",
         content:
-          "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
+          "I write for the companies building the software and security products individuals & businesses depend on. That includes SaaS platforms and cybersecurity solutions.",
       },
       { property: "og:title", content: "Selected Work — Ezekiel Dada" },
       {
         property: "og:description",
         content:
-          "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
+          "I write for the companies building the software and security products individuals & businesses depend on. That includes SaaS platforms and cybersecurity solutions.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://dadaezekiel.lovable.app/work" },

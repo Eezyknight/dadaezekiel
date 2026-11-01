@@ -6,17 +6,17 @@ import ezekielPortrait from "@/assets/ezekiel-portrait.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ezekiel Dada — SaaS, AI & Cybersecurity Writer" },
+      { title: "Ezekiel Dada — SaaS & Cybersecurity Writer" },
       {
         name: "description",
         content:
-          "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
+          "I write for the companies building the software and security products individuals & businesses depend on. That includes SaaS platforms and cybersecurity solutions.",
       },
-      { property: "og:title", content: "Ezekiel Dada — SaaS, AI & Cybersecurity Writer" },
+      { property: "og:title", content: "Ezekiel Dada — SaaS & Cybersecurity Writer" },
       {
         property: "og:description",
         content:
-          "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
+          "I write for the companies building the software and security products individuals & businesses depend on. That includes SaaS platforms and cybersecurity solutions.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -33,7 +33,7 @@ const stats = [
 const services = [
   {
     title: "Thought Leadership Articles",
-    copy: "Expert-driven insights on SaaS, AI, and cybersecurity that help brands lead important industry conversations.",
+    copy: "Expert-driven insights on SaaS & cybersecurity that help brands lead important industry conversations.",
   },
   {
     title: "Product-Focused Blogs",
@@ -49,7 +49,7 @@ const services = [
   },
   {
     title: "Educational Guides",
-    copy: "In-depth resources that simplify complex topics across SaaS, AI, cybersecurity, identity verification, and digital trust.",
+    copy: "In-depth resources that simplify complex topics across SaaS, cybersecurity, identity verification, and digital trust.",
   },
 ];
 
@@ -154,7 +154,7 @@ function Index() {
           <div className="absolute inset-x-0 top-0">
             <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
               <p className="rise display-type mt-24 text-lg leading-tight text-foreground/90 sm:mt-28 sm:text-xl">
-                SaaS, AI & Cybersecurity Writer
+                SaaS & Cybersecurity Writer
               </p>
             </div>
           </div>
@@ -202,11 +202,11 @@ function Index() {
           <div>
             <p className="eyebrow">About Me</p>
             <h2 className="display-type mt-4 text-4xl leading-tight sm:text-5xl">
-              SaaS, AI & Cybersecurity Writer.
+              SaaS & Cybersecurity Writer.
             </h2>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
-              I write for the companies building the software, AI, and security products individuals
-              & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity
+              I write for the companies building the software and security products individuals
+              & businesses depend on. That includes SaaS platforms and cybersecurity
               solutions.
             </p>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
