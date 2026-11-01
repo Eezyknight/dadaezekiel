@@ -10,13 +10,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
+          "I write for the companies building the software and security products individuals & businesses depend on. That includes SaaS platforms and cybersecurity solutions.",
       },
       { property: "og:title", content: "Ezekiel Dada — SaaS & Cybersecurity Writer" },
       {
         property: "og:description",
         content:
-          "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
+          "I write for the companies building the software and security products individuals & businesses depend on. That includes SaaS platforms and cybersecurity solutions.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -205,7 +205,7 @@ function Index() {
               SaaS & Cybersecurity Writer.
             </h2>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
-              I write for the companies building the software, AI, and security products individuals
+              I write for the companies building the software and security products individuals
               & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity
               solutions.
             </p>

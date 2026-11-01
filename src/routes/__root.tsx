@@ -82,13 +82,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
+          "I write for the companies building the software and security products individuals & businesses depend on. That includes SaaS platforms and cybersecurity solutions.",
       },
       { name: "author", content: "Ezekiel Dada" },
       { property: "og:title", content: "Ezekiel Dada — SaaS & Cybersecurity Writer" },
       {
         property: "og:description",
-        content: "I write for the companies building the software, AI, and security products individuals & businesses depend on. That includes SaaS platforms, AI tools, and cybersecurity solutions.",
+        content: "I write for the companies building the software and security products individuals & businesses depend on. That includes SaaS platforms and cybersecurity solutions.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
