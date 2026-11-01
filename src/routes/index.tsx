@@ -33,7 +33,7 @@ const stats = [
 const services = [
   {
     title: "Thought Leadership Articles",
-    copy: "Expert-driven insights on SaaS, AI, and cybersecurity that help brands lead important industry conversations.",
+    copy: "Expert-driven insights on SaaS & cybersecurity that help brands lead important industry conversations.",
   },
   {
     title: "Product-Focused Blogs",
@@ -49,7 +49,7 @@ const services = [
   },
   {
     title: "Educational Guides",
-    copy: "In-depth resources that simplify complex topics across SaaS, AI, cybersecurity, identity verification, and digital trust.",
+    copy: "In-depth resources that simplify complex topics across SaaS, cybersecurity, identity verification, and digital trust.",
   },
 ];
 
