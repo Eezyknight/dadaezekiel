@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
-import heroPortrait from "@/assets/ezekiel-hero.jpg";
 import ezekielPortrait from "@/assets/ezekiel-portrait.jpg";
 
 export const Route = createFileRoute("/")({
@@ -24,11 +23,6 @@ export const Route = createFileRoute("/")({
   }),
   component: Index,
 });
-
-const stats = [
-  { value: "5+", label: "Years Writing" },
-  { value: "98%", label: "Client Retention" },
-];
 
 const services = [
   {
@@ -136,14 +130,6 @@ function Index() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-spot">
         <div className="relative flex min-h-[96svh] flex-col justify-end overflow-hidden">
-          {/* Portrait */}
-          <img
-            src={heroPortrait}
-            alt="Side profile portrait of writer Ezekiel Dada"
-            width={1376}
-            height={768}
-            className="hero-portrait pointer-events-none absolute bottom-0 left-1/2 h-[72svh] w-auto min-w-full max-w-none -translate-x-1/2 object-cover object-center sm:h-[86svh]"
-          />
           <div
             className="pointer-events-none absolute inset-0"
             style={{ backgroundImage: "var(--gradient-fade)" }}
@@ -182,17 +168,6 @@ function Index() {
           </div>
         </div>
 
-        {/* Stats bar */}
-        <div className="relative border-t border-border">
-          <div className="mx-auto grid max-w-2xl grid-cols-2 gap-8 px-5 py-10 text-center sm:px-8">
-            {stats.map((s) => (
-              <div key={s.label} className="px-4">
-                <p className="display-type text-3xl sm:text-4xl">{s.value}</p>
-                <p className="eyebrow mt-2">{s.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
 
 
