@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
+import heroPortrait from "@/assets/ezekiel-hero.jpg";
 import ezekielPortrait from "@/assets/ezekiel-portrait.jpg";
 
 export const Route = createFileRoute("/")({
@@ -23,6 +24,11 @@ export const Route = createFileRoute("/")({
   }),
   component: Index,
 });
+
+const stats = [
+  { value: "5+", label: "Years Writing" },
+  { value: "98%", label: "Client Retention" },
+];
 
 const services = [
   {
@@ -130,13 +136,13 @@ function Index() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-spot">
         <div className="relative flex min-h-[96svh] flex-col justify-end overflow-hidden">
+          {/* Portrait */}
           <img
-            src={ezekielPortrait}
-            alt="Portrait of Ezekiel Dada"
-            width={768}
-            height={919}
-            fetchPriority="high"
-            className="hero-portrait pointer-events-none absolute bottom-0 left-1/2 h-[min(74svh,48rem)] max-w-[90vw] -translate-x-1/2 object-contain object-bottom"
+            src={heroPortrait}
+            alt="Side profile portrait of writer Ezekiel Dada"
+            width={1376}
+            height={768}
+            className="hero-portrait pointer-events-none absolute bottom-0 left-1/2 h-[72svh] w-auto min-w-full max-w-none -translate-x-1/2 object-cover object-center sm:h-[86svh]"
           />
           <div
             className="pointer-events-none absolute inset-0"
@@ -176,6 +182,17 @@ function Index() {
           </div>
         </div>
 
+        {/* Stats bar */}
+        <div className="relative border-t border-border">
+          <div className="mx-auto grid max-w-2xl grid-cols-2 gap-8 px-5 py-10 text-center sm:px-8">
+            {stats.map((s) => (
+              <div key={s.label} className="px-4">
+                <p className="display-type text-3xl sm:text-4xl">{s.value}</p>
+                <p className="eyebrow mt-2">{s.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
 
@@ -207,6 +224,16 @@ function Index() {
               <span aria-hidden>→</span>
             </a>
           </div>
+          <figure className="overflow-hidden rounded-2xl border border-border shadow-lift">
+            <img
+              src={ezekielPortrait}
+              alt="Portrait of Ezekiel Dada, identity verification and fraud prevention writer"
+              width={768}
+              height={919}
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
+          </figure>
         </div>
       </section>
 
