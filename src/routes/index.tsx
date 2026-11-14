@@ -130,6 +130,14 @@ function Index() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-spot">
         <div className="relative flex min-h-[96svh] flex-col justify-end overflow-hidden">
+          <img
+            src={ezekielPortrait}
+            alt="Portrait of Ezekiel Dada"
+            width={768}
+            height={919}
+            fetchPriority="high"
+            className="hero-portrait pointer-events-none absolute bottom-0 left-1/2 h-[min(74svh,48rem)] max-w-[90vw] -translate-x-1/2 object-contain object-bottom"
+          />
           <div
             className="pointer-events-none absolute inset-0"
             style={{ backgroundImage: "var(--gradient-fade)" }}
@@ -199,16 +207,6 @@ function Index() {
               <span aria-hidden>→</span>
             </a>
           </div>
-          <figure className="overflow-hidden rounded-2xl border border-border shadow-lift">
-            <img
-              src={ezekielPortrait}
-              alt="Portrait of Ezekiel Dada, identity verification and fraud prevention writer"
-              width={768}
-              height={919}
-              loading="lazy"
-              className="h-full w-full object-cover"
-            />
-          </figure>
         </div>
       </section>
 
