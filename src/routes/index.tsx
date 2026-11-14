@@ -283,7 +283,6 @@ function Index() {
                     <p className="eyebrow">
                       {w.kind} · {w.year}
                     </p>
-                    <p className="mt-2 text-sm text-muted-foreground">{w.outlet}</p>
                   </div>
                   <div>
                     <h3 className="display-type text-2xl underline decoration-border underline-offset-4 transition-colors group-hover:text-accent group-hover:decoration-accent sm:text-3xl">

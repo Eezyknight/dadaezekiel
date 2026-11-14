@@ -85,7 +85,7 @@ function ArticlePage() {
             Is AI going to kill SaaS? The rise of AI software agents
           </h1>
           <p className="mt-5 text-sm text-muted-foreground">
-            By Ezekiel Dada — SaaS Content Writer
+            By Ezekiel Dada
           </p>
 
           <div className="mt-12 space-y-6 text-base leading-relaxed text-muted-foreground">
