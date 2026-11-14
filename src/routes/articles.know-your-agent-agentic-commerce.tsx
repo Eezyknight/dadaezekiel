@@ -52,7 +52,7 @@ function ArticlePage() {
           <p className="eyebrow">Thought Leadership · 2026</p>
           <h1 className="display-type mt-4 text-4xl leading-tight sm:text-5xl">{TITLE}</h1>
           <p className="mt-4 text-sm text-muted-foreground">
-            By Ezekiel Dada — Identity Verification &amp; Fraud Prevention Writer
+            By Ezekiel Dada
           </p>
 
           <div className="mt-10 space-y-5 text-base leading-relaxed text-foreground/90">
