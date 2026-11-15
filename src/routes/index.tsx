@@ -25,11 +25,6 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const stats = [
-  { value: "5+", label: "Years Writing" },
-  { value: "98%", label: "Client Retention" },
-];
-
 const services = [
   {
     title: "Thought Leadership Articles",
@@ -182,17 +177,6 @@ function Index() {
           </div>
         </div>
 
-        {/* Stats bar */}
-        <div className="relative border-t border-border">
-          <div className="mx-auto grid max-w-2xl grid-cols-2 gap-8 px-5 py-10 text-center sm:px-8">
-            {stats.map((s) => (
-              <div key={s.label} className="px-4">
-                <p className="display-type text-3xl sm:text-4xl">{s.value}</p>
-                <p className="eyebrow mt-2">{s.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
 
 
