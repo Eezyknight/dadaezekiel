@@ -11,7 +11,6 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorkRouteImport } from './routes/work'
-import { Route as ArticlesAmlFinesWeakVerificationRouteImport } from './routes/articles.aml-fines-weak-verification'
 import { Route as ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRouteImport } from './routes/articles.catch-deepfake-fraud-layered-identity-verification'
 import { Route as ArticlesIsAiGoingToKillSaasRouteImport } from './routes/articles.is-ai-going-to-kill-saas'
 import { Route as ArticlesKnowYourAgentAgenticCommerceRouteImport } from './routes/articles.know-your-agent-agentic-commerce'
@@ -27,12 +26,6 @@ const WorkRoute = WorkRouteImport.update({
   path: '/work',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ArticlesAmlFinesWeakVerificationRoute =
-  ArticlesAmlFinesWeakVerificationRouteImport.update({
-    id: '/articles/aml-fines-weak-verification',
-    path: '/articles/aml-fines-weak-verification',
-    getParentRoute: () => rootRouteImport,
-  } as any)
 const ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRoute =
   ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRouteImport.update({
     id: '/articles/catch-deepfake-fraud-layered-identity-verification',
@@ -61,7 +54,6 @@ const ArticlesPigButcheringScamsIdentityVerificationRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/work': typeof WorkRoute
-  '/articles/aml-fines-weak-verification': typeof ArticlesAmlFinesWeakVerificationRoute
   '/articles/catch-deepfake-fraud-layered-identity-verification': typeof ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRoute
   '/articles/is-ai-going-to-kill-saas': typeof ArticlesIsAiGoingToKillSaasRoute
   '/articles/know-your-agent-agentic-commerce': typeof ArticlesKnowYourAgentAgenticCommerceRoute
@@ -70,7 +62,6 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/work': typeof WorkRoute
-  '/articles/aml-fines-weak-verification': typeof ArticlesAmlFinesWeakVerificationRoute
   '/articles/catch-deepfake-fraud-layered-identity-verification': typeof ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRoute
   '/articles/is-ai-going-to-kill-saas': typeof ArticlesIsAiGoingToKillSaasRoute
   '/articles/know-your-agent-agentic-commerce': typeof ArticlesKnowYourAgentAgenticCommerceRoute
@@ -80,7 +71,6 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/work': typeof WorkRoute
-  '/articles/aml-fines-weak-verification': typeof ArticlesAmlFinesWeakVerificationRoute
   '/articles/catch-deepfake-fraud-layered-identity-verification': typeof ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRoute
   '/articles/is-ai-going-to-kill-saas': typeof ArticlesIsAiGoingToKillSaasRoute
   '/articles/know-your-agent-agentic-commerce': typeof ArticlesKnowYourAgentAgenticCommerceRoute
@@ -91,7 +81,6 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/work'
-    | '/articles/aml-fines-weak-verification'
     | '/articles/catch-deepfake-fraud-layered-identity-verification'
     | '/articles/is-ai-going-to-kill-saas'
     | '/articles/know-your-agent-agentic-commerce'
@@ -100,7 +89,6 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/work'
-    | '/articles/aml-fines-weak-verification'
     | '/articles/catch-deepfake-fraud-layered-identity-verification'
     | '/articles/is-ai-going-to-kill-saas'
     | '/articles/know-your-agent-agentic-commerce'
@@ -109,7 +97,6 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/work'
-    | '/articles/aml-fines-weak-verification'
     | '/articles/catch-deepfake-fraud-layered-identity-verification'
     | '/articles/is-ai-going-to-kill-saas'
     | '/articles/know-your-agent-agentic-commerce'
@@ -119,7 +106,6 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   WorkRoute: typeof WorkRoute
-  ArticlesAmlFinesWeakVerificationRoute: typeof ArticlesAmlFinesWeakVerificationRoute
   ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRoute: typeof ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRoute
   ArticlesIsAiGoingToKillSaasRoute: typeof ArticlesIsAiGoingToKillSaasRoute
   ArticlesKnowYourAgentAgenticCommerceRoute: typeof ArticlesKnowYourAgentAgenticCommerceRoute
@@ -140,13 +126,6 @@ declare module '@tanstack/react-router' {
       path: '/work'
       fullPath: '/work'
       preLoaderRoute: typeof WorkRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/articles/aml-fines-weak-verification': {
-      id: '/articles/aml-fines-weak-verification'
-      path: '/articles/aml-fines-weak-verification'
-      fullPath: '/articles/aml-fines-weak-verification'
-      preLoaderRoute: typeof ArticlesAmlFinesWeakVerificationRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/articles/catch-deepfake-fraud-layered-identity-verification': {
@@ -183,7 +162,6 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   WorkRoute: WorkRoute,
-  ArticlesAmlFinesWeakVerificationRoute: ArticlesAmlFinesWeakVerificationRoute,
   ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRoute:
     ArticlesCatchDeepfakeFraudLayeredIdentityVerificationRoute,
   ArticlesIsAiGoingToKillSaasRoute: ArticlesIsAiGoingToKillSaasRoute,
