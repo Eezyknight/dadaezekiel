@@ -6,17 +6,17 @@ import ezekielPortrait from "@/assets/ezekiel-portrait.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ezekiel Dada — SaaS & Cybersecurity Writer" },
+      { title: "Ezekiel Dada — SaaS & Finance Writer" },
       {
         name: "description",
         content:
-          "I write for the companies building the software and security products individuals & businesses depend on. That includes SaaS platforms and cybersecurity solutions.",
+          "I write for the companies building the software and financial products individuals & businesses depend on. That includes SaaS platforms, financial compliance tools, and fraud prevention solutions.",
       },
-      { property: "og:title", content: "Ezekiel Dada — SaaS & Cybersecurity Writer" },
+      { property: "og:title", content: "Ezekiel Dada — SaaS & Finance Writer" },
       {
         property: "og:description",
         content:
-          "I write for the companies building the software and security products individuals & businesses depend on. That includes SaaS platforms and cybersecurity solutions.",
+          "I write for the companies building the software and financial products individuals & businesses depend on. That includes SaaS platforms, financial compliance tools, and fraud prevention solutions.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -28,23 +28,23 @@ export const Route = createFileRoute("/")({
 const services = [
   {
     title: "Thought Leadership Articles",
-    copy: "Expert-driven insights on SaaS & cybersecurity that help brands lead important industry conversations.",
+    copy: "Expert-driven insights on SaaS, financial crime, and the future of payments that help brands lead important industry conversations.",
   },
   {
     title: "Product-Focused Blogs",
-    copy: "Research-driven content that explains your product, use cases, and underlying technology in clear, practical terms.",
+    copy: "Research-driven content that explains your product, use cases, and the compliance or fraud technology behind it in clear, practical terms.",
   },
   {
     title: "Case Studies",
-    copy: "Real customer stories that show how your solution solves problems, reduces risk, and creates measurable business value.",
+    copy: "Real stories, from customer wins to enforcement actions, that show where controls fail, what fixes them, and the business value of getting it right.",
   },
   {
     title: "Website & Brand Copy",
-    copy: "Clear, persuasive copy that communicates your product, strengthens trust, and makes complex technology easier to understand.",
+    copy: "Clear, persuasive copy that communicates your product, strengthens trust, and makes complex products & regulations easier to understand.",
   },
   {
     title: "Educational Guides",
-    copy: "In-depth resources that simplify complex topics across SaaS, cybersecurity, identity verification, and digital trust.",
+    copy: "In-depth resources that simplify complex topics across SaaS, financial crime, fraud prevention, and digital trust.",
   },
 ];
 
@@ -149,7 +149,7 @@ function Index() {
           <div className="absolute inset-x-0 top-0">
             <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
               <p className="rise display-type mt-24 text-lg leading-tight text-foreground/90 sm:mt-28 sm:text-xl">
-                SaaS & Cybersecurity Writer
+                SaaS & Finance Writer
               </p>
             </div>
           </div>
@@ -186,12 +186,12 @@ function Index() {
           <div>
             <p className="eyebrow">About Me</p>
             <h2 className="display-type mt-4 text-4xl leading-tight sm:text-5xl">
-              SaaS & Cybersecurity Writer.
+              SaaS & Finance Writer.
             </h2>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
-              I write for the companies building the software and security products individuals
-              & businesses depend on. That includes SaaS platforms and cybersecurity
-              solutions.
+              I write for the companies building the software and financial products individuals
+              & businesses depend on. That includes SaaS platforms, financial compliance tools,
+              and fraud prevention solutions.
             </p>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
               Whether it’s a thought-leadership article, product-focused blog, case study, website

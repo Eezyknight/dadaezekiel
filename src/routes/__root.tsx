@@ -78,17 +78,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Ezekiel Dada — SaaS & Cybersecurity Writer" },
+      { title: "Ezekiel Dada — SaaS & Finance Writer" },
       {
         name: "description",
         content:
-          "I write for the companies building the software and security products individuals & businesses depend on. That includes SaaS platforms and cybersecurity solutions.",
+          "I write for the companies building the software and financial products individuals & businesses depend on. That includes SaaS platforms, financial compliance tools, and fraud prevention solutions.",
       },
       { name: "author", content: "Ezekiel Dada" },
-      { property: "og:title", content: "Ezekiel Dada — SaaS & Cybersecurity Writer" },
+      { property: "og:title", content: "Ezekiel Dada — SaaS & Finance Writer" },
       {
         property: "og:description",
-        content: "I write for the companies building the software and security products individuals & businesses depend on. That includes SaaS platforms and cybersecurity solutions.",
+        content: "I write for the companies building the software and financial products individuals & businesses depend on. That includes SaaS platforms, financial compliance tools, and fraud prevention solutions.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

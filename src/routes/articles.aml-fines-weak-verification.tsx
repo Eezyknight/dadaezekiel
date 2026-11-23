@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { Nav } from "@/components/site/Nav";
-import heroImg from "@/assets/aml-enforcement-hero.jpg";
-import finesChart from "@/assets/aml-fines-comparison.png";
+import heroImg from "@/assets/aml-enforcement-hero.jpg.asset.json";
+import finesChart from "@/assets/aml-fines-comparison.png.asset.json";
 
 const TITLE = "Four AML Fines: What 2025-2026 Enforcement Actions Reveal";
 const DESCRIPTION =
@@ -58,7 +58,7 @@ function ArticlePage() {
 
           <div className="mt-10 space-y-5 text-base leading-relaxed text-foreground/90">
             <figure className="my-6">
-              <img src={heroImg} alt="A bank building with stacks of coins and a dollar coin in front" className="mx-auto w-full rounded-lg border border-border" />
+              <img src={heroImg.url} alt="A bank building with stacks of coins and a dollar coin in front" className="mx-auto w-full rounded-lg border border-border" />
             </figure>
             <p>
               In 2025, there was a <A href="https://www.fenergo.com/newsroom/global-financial-regulatory-penalties-fall-by-18-in-2025-as-enforcement-shifts-from-us-to-emea-and-apac">total fine of $3.8 billion</A> for Anti-Money Laundering (AML), Know Your Customer (KYC), Customer Due Diligence (CDD), and sanctions.
@@ -113,7 +113,7 @@ function ArticlePage() {
             <UL items={["Conducting stronger risk-based CDD before and throughout customer relationships.", "Enforcing monitoring rules around over-the-counter securities and microwap activities.", "Employing sufficient staff who are adequately trained.", "Establishing clear procedures to investigate and track remediation to completion.", "Independent testing of solutions from time to time."]} />
 
             <figure className="my-6">
-              <img src={finesChart} alt="Horizontal bar chart of four AML penalties in US dollars." className="mx-auto w-full rounded-lg border border-border" />
+              <img src={finesChart.url} alt="Horizontal bar chart of four AML penalties in US dollars." className="mx-auto w-full rounded-lg border border-border" />
             </figure>
             <H2>What These 4 Cases Have in Common</H2>
             <p>The cases look different on the surface, right?</p>
